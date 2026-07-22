@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9fae9f34d3f9a9041a5a4169006cfa63
+guid: 5609ab94ec6ba29458e75caac301e271
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1147090754958584177
-    second: MusicVolumeRow_0
+      213: 2074381653424554460
+    second: SFXVolume_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MusicVolumeRow_0
+      name: SFXVolume_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 168
-        width: 2161
-        height: 420
+        x: 60
+        y: 125
+        width: 2191
+        height: 423
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 179e07ec6f84bef00800000000000000
-      internalID: 1147090754958584177
+      spriteID: cd145fc8f1fa9cc10800000000000000
+      internalID: 2074381653424554460
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MusicVolumeRow_0: 1147090754958584177
+      SFXVolume_0: 2074381653424554460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

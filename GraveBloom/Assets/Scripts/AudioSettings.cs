@@ -7,11 +7,14 @@ public class AudioSettings : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private Slider masterVolumeSlider;
     [SerializeField] private Slider musicVolumeSlider;
+    [SerializeField] private Slider sfxVolumeSlider;
 
     private const string MasterVolumeParameter = "MasterVolume";
     private const string MusicVolumeParameter = "MusicVolume";
+    private const string SFXVolumeParameter = "SFXVolume";
     private const string MasterVolumePreference = "MasterVolumePreference";
     private const string MusicVolumePreference = "MusicVolumePreference";
+    private const string SFXVolumePreference= "SFXVolumePreference";
 
     private void Start()
     {
@@ -25,14 +28,22 @@ public class AudioSettings : MonoBehaviour
             0.8f
         );
 
+        float savedSFXVolume = PlayerPrefs.GetFloat(
+            SFXVolumeParameter,
+            0.8f
+        );
+
         masterVolumeSlider.SetValueWithoutNotify(savedMasterVolume);
         musicVolumeSlider.SetValueWithoutNotify(savedMusicVolume);
+        sfxVolumeSlider.SetValueWithoutNotify(savedSFXVolume);
 
         ApplyVolume(MasterVolumeParameter,savedMasterVolume);
         ApplyVolume(MusicVolumeParameter,savedMusicVolume);
+        ApplyVolume(SFXVolumeParameter,savedSFXVolume);
 
         masterVolumeSlider.onValueChanged.AddListener(SetMasterVolume);
         musicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
+        sfxVolumeSlider.onValueChanged.AddListener(SetSFXVolume);
     }
 
     public void SetMasterVolume(float value)
@@ -45,6 +56,12 @@ public class AudioSettings : MonoBehaviour
     {
         ApplyVolume(MusicVolumeParameter,value);
         PlayerPrefs.SetFloat(MusicVolumeParameter,value);
+    }
+
+    public void SetSFXVolume (float value)
+    {
+        ApplyVolume(SFXVolumeParameter,value);
+        PlayerPrefs.SetFloat(SFXVolumeParameter,value);
     }
 
     private void ApplyVolume(string parameterName, float value)
@@ -81,6 +98,11 @@ public class AudioSettings : MonoBehaviour
         if (musicVolumeSlider != null)
         {
             musicVolumeSlider.onValueChanged.RemoveListener(SetMusicVolume);
+        }
+
+        if(sfxVolumeSlider != null)
+        {
+            sfxVolumeSlider.onValueChanged.RemoveListener(SetSFXVolume);
         }
     }
 }

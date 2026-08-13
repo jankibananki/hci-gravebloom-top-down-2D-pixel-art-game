@@ -1,0 +1,5772 @@
+fileFormatVersion: 2
+guid: 580b9ed6b5e8f78419ba6de55ba7d038
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6204639933530703386
+    second: gravebloom_props_02_0
+  - first:
+      213: -5709987509068848949
+    second: gravebloom_props_02_1
+  - first:
+      213: -2774047500815942887
+    second: gravebloom_props_02_2
+  - first:
+      213: -1328589734256531054
+    second: gravebloom_props_02_3
+  - first:
+      213: 7312139726136070120
+    second: gravebloom_props_02_4
+  - first:
+      213: -1810810699576962291
+    second: gravebloom_props_02_5
+  - first:
+      213: 4535479203922696384
+    second: gravebloom_props_02_6
+  - first:
+      213: -2916081524728382307
+    second: gravebloom_props_02_7
+  - first:
+      213: -7419738009549683293
+    second: gravebloom_props_02_8
+  - first:
+      213: -2345115695319842061
+    second: gravebloom_props_02_9
+  - first:
+      213: -4823694047781355876
+    second: gravebloom_props_02_10
+  - first:
+      213: 3157477606459696355
+    second: gravebloom_props_02_11
+  - first:
+      213: 4220889973591626326
+    second: gravebloom_props_02_12
+  - first:
+      213: -7145894725958972427
+    second: gravebloom_props_02_13
+  - first:
+      213: 2430094341016933184
+    second: gravebloom_props_02_14
+  - first:
+      213: 5163675760727426691
+    second: gravebloom_props_02_15
+  - first:
+      213: 6826908788456338022
+    second: gravebloom_props_02_16
+  - first:
+      213: 3974085496915465028
+    second: gravebloom_props_02_17
+  - first:
+      213: 559221357024136993
+    second: gravebloom_props_02_18
+  - first:
+      213: -5132498641540306814
+    second: gravebloom_props_02_19
+  - first:
+      213: -8189115138850653391
+    second: gravebloom_props_02_20
+  - first:
+      213: -921651749706404706
+    second: gravebloom_props_02_21
+  - first:
+      213: -5069725727997628382
+    second: gravebloom_props_02_22
+  - first:
+      213: 384420322754377104
+    second: gravebloom_props_02_23
+  - first:
+      213: 985574322761831150
+    second: gravebloom_props_02_24
+  - first:
+      213: 7593691635324464602
+    second: gravebloom_props_02_25
+  - first:
+      213: -510167995284047432
+    second: gravebloom_props_02_26
+  - first:
+      213: 8342011899652190456
+    second: gravebloom_props_02_27
+  - first:
+      213: 6465361527933506582
+    second: gravebloom_props_02_28
+  - first:
+      213: 5862665251598150512
+    second: gravebloom_props_02_29
+  - first:
+      213: -4844571986761189686
+    second: gravebloom_props_02_30
+  - first:
+      213: 6027974459277301702
+    second: gravebloom_props_02_31
+  - first:
+      213: -6058809024286131461
+    second: gravebloom_props_02_32
+  - first:
+      213: -1584200899804412616
+    second: gravebloom_props_02_33
+  - first:
+      213: -3668536493903647495
+    second: gravebloom_props_02_34
+  - first:
+      213: 6776139082318817714
+    second: gravebloom_props_02_35
+  - first:
+      213: 7701777628494225610
+    second: gravebloom_props_02_36
+  - first:
+      213: 7216645127209025438
+    second: gravebloom_props_02_37
+  - first:
+      213: -109162910817178688
+    second: gravebloom_props_02_38
+  - first:
+      213: 2946699582309555653
+    second: gravebloom_props_02_39
+  - first:
+      213: 8410986309301244315
+    second: gravebloom_props_02_40
+  - first:
+      213: 6734619827600953688
+    second: gravebloom_props_02_41
+  - first:
+      213: 519998003253804637
+    second: gravebloom_props_02_42
+  - first:
+      213: -2892574198551244203
+    second: gravebloom_props_02_43
+  - first:
+      213: 3110940473496405426
+    second: gravebloom_props_02_44
+  - first:
+      213: -8408423408144068782
+    second: gravebloom_props_02_45
+  - first:
+      213: -1081545679518732195
+    second: gravebloom_props_02_46
+  - first:
+      213: 6487516235088938701
+    second: gravebloom_props_02_47
+  - first:
+      213: 6729759715777523031
+    second: gravebloom_props_02_48
+  - first:
+      213: -8658898272079284765
+    second: gravebloom_props_02_49
+  - first:
+      213: 6805381356248748369
+    second: gravebloom_props_02_50
+  - first:
+      213: -6239442137691695857
+    second: gravebloom_props_02_51
+  - first:
+      213: -7023117731457560571
+    second: gravebloom_props_02_52
+  - first:
+      213: -6352221912218141579
+    second: gravebloom_props_02_53
+  - first:
+      213: -3988898367896128318
+    second: gravebloom_props_02_54
+  - first:
+      213: -5208088676180075065
+    second: gravebloom_props_02_55
+  - first:
+      213: -2434079725558410415
+    second: gravebloom_props_02_56
+  - first:
+      213: 2005533329734366662
+    second: gravebloom_props_02_57
+  - first:
+      213: 9203385646344935741
+    second: gravebloom_props_02_58
+  - first:
+      213: 209081917308350040
+    second: gravebloom_props_02_59
+  - first:
+      213: 2631457037727080862
+    second: gravebloom_props_02_60
+  - first:
+      213: 6747793819673267605
+    second: gravebloom_props_02_61
+  - first:
+      213: 1586302796719496141
+    second: gravebloom_props_02_62
+  - first:
+      213: -7695822282060437762
+    second: gravebloom_props_02_63
+  - first:
+      213: -7987770321454722162
+    second: gravebloom_props_02_64
+  - first:
+      213: 6145163993342689651
+    second: gravebloom_props_02_65
+  - first:
+      213: -8637863205962214714
+    second: gravebloom_props_02_66
+  - first:
+      213: 972580417399913660
+    second: gravebloom_props_02_67
+  - first:
+      213: -7142598953720615562
+    second: gravebloom_props_02_68
+  - first:
+      213: 5485872167200130529
+    second: gravebloom_props_02_69
+  - first:
+      213: 6537660284788012949
+    second: gravebloom_props_02_70
+  - first:
+      213: -366886342021871885
+    second: gravebloom_props_02_71
+  - first:
+      213: -8803146932326537494
+    second: gravebloom_props_02_72
+  - first:
+      213: -7157243483910563376
+    second: gravebloom_props_02_73
+  - first:
+      213: 649699265759249075
+    second: gravebloom_props_02_74
+  - first:
+      213: 5650640513225669057
+    second: gravebloom_props_02_75
+  - first:
+      213: 6276989942678867179
+    second: gravebloom_props_02_76
+  - first:
+      213: 3783149943754304144
+    second: gravebloom_props_02_77
+  - first:
+      213: -4396006267765923841
+    second: gravebloom_props_02_78
+  - first:
+      213: 4314470428128142603
+    second: gravebloom_props_02_79
+  - first:
+      213: -874972043737523039
+    second: gravebloom_props_02_80
+  - first:
+      213: -2457499402750275345
+    second: gravebloom_props_02_81
+  - first:
+      213: -1931468658311992260
+    second: gravebloom_props_02_82
+  - first:
+      213: 6416528700420819057
+    second: gravebloom_props_02_83
+  - first:
+      213: -2699723068640923852
+    second: gravebloom_props_02_84
+  - first:
+      213: -4388669970615332793
+    second: gravebloom_props_02_85
+  - first:
+      213: 6487377772433684398
+    second: gravebloom_props_02_86
+  - first:
+      213: -8495243557340526466
+    second: gravebloom_props_02_87
+  - first:
+      213: 477546689500611512
+    second: gravebloom_props_02_88
+  - first:
+      213: 1964135276239636115
+    second: gravebloom_props_02_89
+  - first:
+      213: -6102214570764911079
+    second: gravebloom_props_02_90
+  - first:
+      213: 4930698188574889977
+    second: gravebloom_props_02_91
+  - first:
+      213: -2742763594622080577
+    second: gravebloom_props_02_92
+  - first:
+      213: -5819875159620177932
+    second: gravebloom_props_02_93
+  - first:
+      213: 1728507728345138104
+    second: gravebloom_props_02_94
+  - first:
+      213: 8881948838344633035
+    second: gravebloom_props_02_95
+  - first:
+      213: -445883397359298950
+    second: gravebloom_props_02_96
+  - first:
+      213: -5627081151931495256
+    second: gravebloom_props_02_97
+  - first:
+      213: -5353331232468085810
+    second: gravebloom_props_02_98
+  - first:
+      213: 1619084502376249866
+    second: gravebloom_props_02_99
+  - first:
+      213: 806962904434970325
+    second: gravebloom_props_02_100
+  - first:
+      213: -3078445256817412485
+    second: gravebloom_props_02_101
+  - first:
+      213: 4750092742244939868
+    second: gravebloom_props_02_102
+  - first:
+      213: 476417177369047931
+    second: gravebloom_props_02_103
+  - first:
+      213: -2212820074402801078
+    second: gravebloom_props_02_104
+  - first:
+      213: 7228632778158277308
+    second: gravebloom_props_02_105
+  - first:
+      213: -8961441653642484773
+    second: gravebloom_props_02_106
+  - first:
+      213: 7113784305494264607
+    second: gravebloom_props_02_107
+  - first:
+      213: 6208583698774524956
+    second: gravebloom_props_02_108
+  - first:
+      213: -2891107572112689868
+    second: gravebloom_props_02_109
+  - first:
+      213: 924055985873197292
+    second: gravebloom_props_02_110
+  - first:
+      213: 7262028313806993091
+    second: gravebloom_props_02_111
+  - first:
+      213: -2188129875529501163
+    second: gravebloom_props_02_112
+  - first:
+      213: 532066891206688581
+    second: gravebloom_props_02_113
+  - first:
+      213: 1852802978208460587
+    second: gravebloom_props_02_114
+  - first:
+      213: 240212987953489972
+    second: gravebloom_props_02_115
+  - first:
+      213: 2631526654389206348
+    second: gravebloom_props_02_116
+  - first:
+      213: 631151829695768433
+    second: gravebloom_props_02_117
+  - first:
+      213: 1369705480190336932
+    second: gravebloom_props_02_118
+  - first:
+      213: 1092120296232380709
+    second: gravebloom_props_02_119
+  - first:
+      213: -744105312363159984
+    second: gravebloom_props_02_120
+  - first:
+      213: 1973166790582042840
+    second: gravebloom_props_02_121
+  - first:
+      213: 4772530965862351730
+    second: gravebloom_props_02_122
+  - first:
+      213: -6934994896836367998
+    second: gravebloom_props_02_123
+  - first:
+      213: 5629287288504875401
+    second: gravebloom_props_02_124
+  - first:
+      213: 6130490217713921040
+    second: gravebloom_props_02_125
+  - first:
+      213: 9195760044176939676
+    second: gravebloom_props_02_126
+  - first:
+      213: 2135011637559186934
+    second: gravebloom_props_02_127
+  - first:
+      213: -8409534701212163747
+    second: gravebloom_props_02_128
+  - first:
+      213: 1052506860710622173
+    second: gravebloom_props_02_129
+  - first:
+      213: -1193941217409791998
+    second: gravebloom_props_02_130
+  - first:
+      213: -8345625941454105015
+    second: gravebloom_props_02_131
+  - first:
+      213: 5872910629722583088
+    second: gravebloom_props_02_132
+  - first:
+      213: -3352941291971302741
+    second: gravebloom_props_02_133
+  - first:
+      213: 4294461487407768244
+    second: gravebloom_props_02_134
+  - first:
+      213: 4584230853763144546
+    second: gravebloom_props_02_135
+  - first:
+      213: -8569819698956201752
+    second: gravebloom_props_02_136
+  - first:
+      213: 1201669323406128542
+    second: gravebloom_props_02_137
+  - first:
+      213: 359678500959535744
+    second: gravebloom_props_02_138
+  - first:
+      213: -4692538282709787845
+    second: gravebloom_props_02_139
+  - first:
+      213: -1814639270363206734
+    second: gravebloom_props_02_140
+  - first:
+      213: -3909816508136965681
+    second: gravebloom_props_02_141
+  - first:
+      213: 1111974722070096311
+    second: gravebloom_props_02_142
+  - first:
+      213: 2377011551427485741
+    second: gravebloom_props_02_143
+  - first:
+      213: -1454436818849010253
+    second: gravebloom_props_02_144
+  - first:
+      213: -9035023215626870071
+    second: gravebloom_props_02_145
+  - first:
+      213: -6318119010795824341
+    second: gravebloom_props_02_146
+  - first:
+      213: 4908409656450634492
+    second: gravebloom_props_02_147
+  - first:
+      213: 1674394343686164862
+    second: gravebloom_props_02_148
+  - first:
+      213: -4344798702855801490
+    second: gravebloom_props_02_149
+  - first:
+      213: 3105625592890563344
+    second: gravebloom_props_02_150
+  - first:
+      213: -6306714772984729613
+    second: gravebloom_props_02_151
+  - first:
+      213: 9156339379476836032
+    second: gravebloom_props_02_152
+  - first:
+      213: 722870443528730321
+    second: gravebloom_props_02_153
+  - first:
+      213: 6334689750073553502
+    second: gravebloom_props_02_154
+  - first:
+      213: -4186181104482351442
+    second: gravebloom_props_02_155
+  - first:
+      213: -5927497062491253487
+    second: gravebloom_props_02_156
+  - first:
+      213: 4896798209364458855
+    second: gravebloom_props_02_157
+  - first:
+      213: -78655654303653177
+    second: gravebloom_props_02_158
+  - first:
+      213: -6577106633902167314
+    second: gravebloom_props_02_159
+  - first:
+      213: -8321706701140781014
+    second: gravebloom_props_02_160
+  - first:
+      213: 5907416399627847185
+    second: gravebloom_props_02_161
+  - first:
+      213: -4478624346136052292
+    second: gravebloom_props_02_162
+  - first:
+      213: -2344385472669053311
+    second: gravebloom_props_02_163
+  - first:
+      213: -4561528361347485729
+    second: gravebloom_props_02_164
+  - first:
+      213: -6730411829886191383
+    second: gravebloom_props_02_165
+  - first:
+      213: 7999212096004922754
+    second: gravebloom_props_02_166
+  - first:
+      213: 6077624530713343770
+    second: gravebloom_props_02_167
+  - first:
+      213: -8226280317636251242
+    second: gravebloom_props_02_168
+  - first:
+      213: -5653822169860579163
+    second: gravebloom_props_02_169
+  - first:
+      213: 3827825358375202578
+    second: gravebloom_props_02_170
+  - first:
+      213: -7172426668183540094
+    second: gravebloom_props_02_171
+  - first:
+      213: -2598534219798158366
+    second: gravebloom_props_02_172
+  - first:
+      213: 4651248551697955393
+    second: gravebloom_props_02_173
+  - first:
+      213: 4069155502172136782
+    second: gravebloom_props_02_174
+  - first:
+      213: -4378818096228315875
+    second: gravebloom_props_02_175
+  - first:
+      213: -2599625438585695238
+    second: gravebloom_props_02_176
+  - first:
+      213: -3396758963779833305
+    second: gravebloom_props_02_177
+  - first:
+      213: -7137293065776649700
+    second: gravebloom_props_02_178
+  - first:
+      213: -7061169898820655261
+    second: gravebloom_props_02_179
+  - first:
+      213: 4737334816303827576
+    second: gravebloom_props_02_180
+  - first:
+      213: 5410591432319422515
+    second: gravebloom_props_02_181
+  - first:
+      213: -7755206667365225220
+    second: gravebloom_props_02_182
+  - first:
+      213: 6202504607989930254
+    second: gravebloom_props_02_183
+  - first:
+      213: 5603897424320995469
+    second: gravebloom_props_02_184
+  - first:
+      213: -6001951939926446352
+    second: gravebloom_props_02_185
+  - first:
+      213: -8479501333130779484
+    second: gravebloom_props_02_186
+  - first:
+      213: -1204945603504249096
+    second: gravebloom_props_02_187
+  - first:
+      213: -6053243082206209521
+    second: gravebloom_props_02_188
+  - first:
+      213: -9044327126986504329
+    second: gravebloom_props_02_189
+  - first:
+      213: -5022811759337209085
+    second: gravebloom_props_02_190
+  - first:
+      213: 6698162814169724538
+    second: gravebloom_props_02_191
+  - first:
+      213: -4625570601277004905
+    second: gravebloom_props_02_192
+  - first:
+      213: 5173779497582880214
+    second: gravebloom_props_02_193
+  - first:
+      213: -2750244178225335436
+    second: gravebloom_props_02_194
+  - first:
+      213: -6238927060972915883
+    second: gravebloom_props_02_195
+  - first:
+      213: -6093426594726313665
+    second: gravebloom_props_02_196
+  - first:
+      213: -1715651473989214061
+    second: gravebloom_props_02_197
+  - first:
+      213: -1691656851321800115
+    second: gravebloom_props_02_198
+  - first:
+      213: 5568837196220319722
+    second: gravebloom_props_02_199
+  - first:
+      213: -5690963097925586129
+    second: gravebloom_props_02_200
+  - first:
+      213: -4635082875431529657
+    second: gravebloom_props_02_201
+  - first:
+      213: -7131193851657321085
+    second: gravebloom_props_02_202
+  - first:
+      213: -6048942681356077269
+    second: gravebloom_props_02_203
+  - first:
+      213: -8099388823588786355
+    second: gravebloom_props_02_204
+  - first:
+      213: -4869353639383800706
+    second: gravebloom_props_02_205
+  - first:
+      213: 2888800261947306364
+    second: gravebloom_props_02_206
+  - first:
+      213: -4791150064609746184
+    second: gravebloom_props_02_207
+  - first:
+      213: 2154234424787685941
+    second: gravebloom_props_02_208
+  - first:
+      213: 2076652024473076960
+    second: gravebloom_props_02_209
+  - first:
+      213: -2391730567567848502
+    second: gravebloom_props_02_210
+  - first:
+      213: -2342615804816320876
+    second: gravebloom_props_02_211
+  - first:
+      213: -8132630188038699735
+    second: gravebloom_props_02_212
+  - first:
+      213: 6700969841205511771
+    second: gravebloom_props_02_213
+  - first:
+      213: 7375378345095245883
+    second: gravebloom_props_02_214
+  - first:
+      213: -2606570828465876927
+    second: gravebloom_props_02_215
+  - first:
+      213: 7066641260599462262
+    second: gravebloom_props_02_216
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gravebloom_props_02_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1047
+        width: 602
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a160d4d552f4b1650800000000000000
+      internalID: 6204639933530703386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_1
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1031
+        width: 522
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0a8020d9c02c0b0800000000000000
+      internalID: -5709987509068848949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_2
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1077
+        width: 305
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b3ecbde7a9089d0800000000000000
+      internalID: -2774047500815942887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_3
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1064
+        width: 78
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 299a8650da6ef8de0800000000000000
+      internalID: -1328589734256531054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_4
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 991
+        width: 73
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8efcc5ce650f97560800000000000000
+      internalID: 7312139726136070120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_5
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 991
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d031d384345bed6e0800000000000000
+      internalID: -1810810699576962291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_6
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 982
+        width: 154
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8dbf35e4241fe30800000000000000
+      internalID: 4535479203922696384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_7
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 967
+        width: 162
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c3c76ad4ff787d0800000000000000
+      internalID: -2916081524728382307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_8
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 971
+        width: 203
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5c35e779bc70990800000000000000
+      internalID: -7419738009549683293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_9
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 898
+        width: 58
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2844733b9747fd0800000000000000
+      internalID: -2345115695319842061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 862
+        width: 694
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e73d012dbce0db0800000000000000
+      internalID: -4823694047781355876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_11
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 890
+        width: 106
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4e74f672d91db20800000000000000
+      internalID: 3157477606459696355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_12
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 863
+        width: 457
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652dfe7511d939a30800000000000000
+      internalID: 4220889973591626326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_13
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 847
+        width: 347
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbc0e87b9ea4dc90800000000000000
+      internalID: -7145894725958972427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_14
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 847
+        width: 186
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043500f8ded69b120800000000000000
+      internalID: 2430094341016933184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_15
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 847
+        width: 86
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386047dfebf09a740800000000000000
+      internalID: 5163675760727426691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_16
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 751
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662bee16f5d0ebe50800000000000000
+      internalID: 6826908788456338022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_17
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 778
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4439dae24b9c62730800000000000000
+      internalID: 3974085496915465028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 785
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f4c308cd0c2c700800000000000000
+      internalID: 559221357024136993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_19
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 739
+        width: 41
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288a0dcbda3b5c8b0800000000000000
+      internalID: -5132498641540306814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_20
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 778
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b78044b2b6a5e80800000000000000
+      internalID: -8189115138850653391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_21
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 739
+        width: 48
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ce124ed92a533f0800000000000000
+      internalID: -921651749706404706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_22
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 791
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220fa0a9f47b4a9b0800000000000000
+      internalID: -5069725727997628382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_23
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 799
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095373e2f3cb55500800000000000000
+      internalID: 384420322754377104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_24
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 804
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee217ffef967dad00800000000000000
+      internalID: 985574322761831150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_25
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 796
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: addae592f46326960800000000000000
+      internalID: 7593691635324464602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_26
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 767
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9325949e48be8f0800000000000000
+      internalID: -510167995284047432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_27
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 792
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0b9d6ff97c4c370800000000000000
+      internalID: 8342011899652190456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_28
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 771
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61414f00e0499b950800000000000000
+      internalID: 6465361527933506582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_29
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 783
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ba88e0cfe5c5150800000000000000
+      internalID: 5862665251598150512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_30
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 775
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac67a48127f94ccb0800000000000000
+      internalID: -4844571986761189686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_31
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 775
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7d95845daa7a350800000000000000
+      internalID: 6027974459277301702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_32
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 774
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa7e791b49caeba0800000000000000
+      internalID: -6058809024286131461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_33
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 799
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835cd42dca9c30ae0800000000000000
+      internalID: -1584200899804412616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_34
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 798
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fce05bde7db61dc0800000000000000
+      internalID: -3668536493903647495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_35
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 774
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b92146089ea90e50800000000000000
+      internalID: 6776139082318817714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_36
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 783
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0e27582f532ea60800000000000000
+      internalID: 7701777628494225610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_37
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 759
+        width: 102
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ff85df18ca62460800000000000000
+      internalID: 7216645127209025438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_38
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 783
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb281639ec2c7ef0800000000000000
+      internalID: -109162910817178688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_39
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 767
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd5a5768a7c4e820800000000000000
+      internalID: 2946699582309555653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 783
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9113982c73d9b470800000000000000
+      internalID: 8410986309301244315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_41
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 779
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85115793d0d267d50800000000000000
+      internalID: 6734619827600953688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_42
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 784
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5efadbcd67673700800000000000000
+      internalID: 519998003253804637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_43
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 759
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55294e887138bd7d0800000000000000
+      internalID: -2892574198551244203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_44
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 774
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b58320d0e74c2b20800000000000000
+      internalID: 3110940473496405426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_45
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 743
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f4e74c5774f4b80800000000000000
+      internalID: -8408423408144068782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_46
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 787
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d507deb4fe39df0f0800000000000000
+      internalID: -1081545679518732195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_47
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 783
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc64e0bb4a9480a50800000000000000
+      internalID: 6487516235088938701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_48
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 750
+        width: 71
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d27a24ec8e46d50800000000000000
+      internalID: 6729759715777523031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_49
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 774
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5787af5e965d780800000000000000
+      internalID: -8658898272079284765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_50
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 730
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151d54c7942917e50800000000000000
+      internalID: 6805381356248748369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_51
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 737
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05584a0f6c0969a0800000000000000
+      internalID: -6239442137691695857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_52
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 767
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50099b022afd88e90800000000000000
+      internalID: -7023117731457560571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_53
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 738
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cf8cb83df58d7a0800000000000000
+      internalID: -6352221912218141579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_54
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 727
+        width: 71
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c47a68811694a8c0800000000000000
+      internalID: -3988898367896128318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_55
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 766
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd5d8151f629b7b0800000000000000
+      internalID: -5208088676180075065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_56
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 764
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1535c1bc269683ed0800000000000000
+      internalID: -2434079725558410415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_57
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 751
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5f50800f515db10800000000000000
+      internalID: 2005533329734366662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_58
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 760
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d399155db7ef8bf70800000000000000
+      internalID: 9203385646344935741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_59
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 742
+        width: 59
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e2f1265eec6e200800000000000000
+      internalID: 209081917308350040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_60
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 759
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91ac67db30d48420800000000000000
+      internalID: 2631457037727080862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_61
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 771
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d83374abaf4ad50800000000000000
+      internalID: 6747793819673267605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_62
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 767
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb9ca03dfda30610800000000000000
+      internalID: 1586302796719496141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_63
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 735
+        width: 67
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6604f9862f23590800000000000000
+      internalID: -7695822282060437762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_64
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 767
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e839842b63db52190800000000000000
+      internalID: -7987770321454722162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_65
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 754
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37146bde712084550800000000000000
+      internalID: 6145163993342689651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_66
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 730
+        width: 67
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c29436fd25202880800000000000000
+      internalID: -8637863205962214714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_67
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 744
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc7f969cbc4f7d00800000000000000
+      internalID: 972580417399913660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_68
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 731
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67de76e381460ec90800000000000000
+      internalID: -7142598953720615562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_69
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 752
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e58a21bbabb12c40800000000000000
+      internalID: 5485872167200130529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_70
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 726
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597f7f8146f6aba50800000000000000
+      internalID: 6537660284788012949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_71
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 735
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f608d6d0de88eaf0800000000000000
+      internalID: -366886342021871885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_72
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 731
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae66b119180f4d580800000000000000
+      internalID: -8803146932326537494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_73
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 730
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9188ad8fc5cac90800000000000000
+      internalID: -7157243483910563376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_74
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 743
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2896a3a02340900800000000000000
+      internalID: 649699265759249075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_75
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 736
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c93f30cb9b1b6e40800000000000000
+      internalID: 5650640513225669057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_76
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 746
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: becc21098195c1750800000000000000
+      internalID: 6276989942678867179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_77
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 758
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09aa38174d2708430800000000000000
+      internalID: 3783149943754304144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_78
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 743
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fffdb6b279f3ef2c0800000000000000
+      internalID: -4396006267765923841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_79
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 743
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05618ecef310eb30800000000000000
+      internalID: 4314470428128142603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_80
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 743
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac90a0ef897bd3f0800000000000000
+      internalID: -874972043737523039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_81
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 727
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0d557405535edd0800000000000000
+      internalID: -2457499402750275345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_82
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 722
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c63861d7b0235e0800000000000000
+      internalID: -1931468658311992260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_83
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 734
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1788ea75bd61c0950800000000000000
+      internalID: 6416528700420819057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_84
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 727
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43feabd3c28a88ad0800000000000000
+      internalID: -2699723068640923852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_85
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 727
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7409c05f9ef4813c0800000000000000
+      internalID: -4388669970615332793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_86
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 728
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7bca166bbc70a50800000000000000
+      internalID: 6487377772433684398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_87
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 551
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78ca4c8ef4da1a80800000000000000
+      internalID: -8495243557340526466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_88
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 479
+        width: 114
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b309571f2690a600800000000000000
+      internalID: 477546689500611512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_89
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 552
+        width: 135
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396c31790a2024b10800000000000000
+      internalID: 1964135276239636115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_90
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 495
+        width: 139
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e3856cd24905ba0800000000000000
+      internalID: -6102214570764911079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_91
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 623
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f71ba8e0eb5d6440800000000000000
+      internalID: 4930698188574889977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_92
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 599
+        width: 30
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb96dafda0fbfe9d0800000000000000
+      internalID: -2742763594622080577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_93
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 575
+        width: 26
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff28b99066ab3fa0800000000000000
+      internalID: -5819875159620177932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_94
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 551
+        width: 34
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b38783fe94ecf710800000000000000
+      internalID: 1728507728345138104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_95
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 527
+        width: 34
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcaa9bee865034b70800000000000000
+      internalID: 8881948838344633035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_96
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 590
+        width: 114
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7697299967efc9f0800000000000000
+      internalID: -445883397359298950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_97
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 615
+        width: 73
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acc3d0818798e1b0800000000000000
+      internalID: -5627081151931495256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_98
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 640
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec35cb37b9525b5b0800000000000000
+      internalID: -5353331232468085810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_99
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 575
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0af971d6c4287610800000000000000
+      internalID: 1619084502376249866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_100
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 551
+        width: 106
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de83c17c78e23b00800000000000000
+      internalID: 806962904434970325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_101
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 583
+        width: 82
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7679e6695a2745d0800000000000000
+      internalID: -3078445256817412485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_102
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 647
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58bba79e28bbe140800000000000000
+      internalID: 4750092742244939868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_103
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 455
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73f9fd06e29c9600800000000000000
+      internalID: 476417177369047931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_104
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 527
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a1e59cddb7a41e0800000000000000
+      internalID: -2212820074402801078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_105
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 511
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb28ed97633415460800000000000000
+      internalID: 7228632778158277308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_106
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 487
+        width: 99
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd32047bb4092a380800000000000000
+      internalID: -8961441653642484773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_107
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 495
+        width: 111
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b0cb9a22d39b260800000000000000
+      internalID: 7113784305494264607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_108
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 455
+        width: 106
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c148cb3caf1592650800000000000000
+      internalID: 6208583698774524956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_109
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 391
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435f7cc1bf8b0e7d0800000000000000
+      internalID: -2891107572112689868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_110
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 391
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce89b86f508e2dc00800000000000000
+      internalID: 924055985873197292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_111
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 383
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c67b498648e7c460800000000000000
+      internalID: 7262028313806993091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_112
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 391
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516f4aea87332a1e0800000000000000
+      internalID: -2188129875529501163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_113
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 399
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ffe1fb408426700800000000000000
+      internalID: 532066891206688581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_114
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 415
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fa6eafd7a76b910800000000000000
+      internalID: 1852802978208460587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_115
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 367
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43827699078655300800000000000000
+      internalID: 240212987953489972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_116
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 367
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d37dbbc8f058420800000000000000
+      internalID: 2631526654389206348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_117
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 359
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177aa50ce3d42c800800000000000000
+      internalID: 631151829695768433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_118
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 392
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af96a190eb220310800000000000000
+      internalID: 1369705480190336932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_119
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 359
+        width: 89
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529ece48f9df72f00800000000000000
+      internalID: 1092120296232380709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_120
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 403
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05edc1d29286ca5f0800000000000000
+      internalID: -744105312363159984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_121
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 367
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d08d33edb8126b10800000000000000
+      internalID: 1973166790582042840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_122
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 359
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27307c3a0af6b3240800000000000000
+      internalID: 4772530965862351730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_123
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 361
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289ebee62e2f1cf90800000000000000
+      internalID: -6934994896836367998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_124
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 367
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98974f1b6fe3f1e40800000000000000
+      internalID: 5629287288504875401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_125
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 391
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c68dd4f50e31550800000000000000
+      internalID: 6130490217713921040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_126
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 384
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a95e8f907ed9f70800000000000000
+      internalID: 9195760044176939676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_127
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 367
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f55a08c5c511ad10800000000000000
+      internalID: 2135011637559186934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_128
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 375
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51adefaeb45b4b80800000000000000
+      internalID: -8409534701212163747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_129
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 375
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd37154d9614b9e00800000000000000
+      internalID: 1052506860710622173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_130
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 375
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208879dd9c44e6fe0800000000000000
+      internalID: -1193941217409791998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_131
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 375
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946d75b5c616e2c80800000000000000
+      internalID: -8345625941454105015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_132
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 351
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030fa3a0a15c08150800000000000000
+      internalID: 5872910629722583088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_133
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 359
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baaaf4bd8a5f771d0800000000000000
+      internalID: -3352941291971302741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_134
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 351
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2298248fdf89b30800000000000000
+      internalID: 4294461487407768244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_135
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 303
+        width: 82
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b10f65ca57e9f30800000000000000
+      internalID: 4584230853763144546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_136
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 351
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0129e7362e11980800000000000000
+      internalID: -8569819698956201752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_137
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 357
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e953b1702ef2da010800000000000000
+      internalID: 1201669323406128542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_138
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 320
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082c903e0b5ddf400800000000000000
+      internalID: 359678500959535744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_139
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 287
+        width: 91
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b59244b41c0eeb0800000000000000
+      internalID: -4692538282709787845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_140
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 331
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbe68ea23b11d6e0800000000000000
+      internalID: -1814639270363206734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_141
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 303
+        width: 58
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9b987d99a8db9c0800000000000000
+      internalID: -3909816508136965681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_142
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 290
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9a3344e178e6f00800000000000000
+      internalID: 1111974722070096311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_143
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 291
+        width: 66
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20e5dd7967dcf020800000000000000
+      internalID: 2377011551427485741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_144
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 295
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd61405b6dc0dbe0800000000000000
+      internalID: -1454436818849010253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_145
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 319
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2272741462d9280800000000000000
+      internalID: -9035023215626870071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_146
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 295
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b5fd80c388158a0800000000000000
+      internalID: -6318119010795824341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_147
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 295
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf256d0a39c2e1440800000000000000
+      internalID: 4908409656450634492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_148
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 319
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e715655c8c4ac3710800000000000000
+      internalID: 1674394343686164862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_149
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 264
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65b3b7799c24b3c0800000000000000
+      internalID: -4344798702855801490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_150
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 274
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b9a9db506691b20800000000000000
+      internalID: 3105625592890563344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_151
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 290
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff6980145c0a78a0800000000000000
+      internalID: -6306714772984729613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_152
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 279
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce23ac372ad11f70800000000000000
+      internalID: 9156339379476836032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_153
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 271
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6b825a6d6280a00800000000000000
+      internalID: 722870443528730321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_154
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 295
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52317bd3c659e750800000000000000
+      internalID: 6334689750073553502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_155
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 282
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea680edf672b7e5c0800000000000000
+      internalID: -4186181104482351442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_156
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 279
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115990fa3dc4dbda0800000000000000
+      internalID: -5927497062491253487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_157
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 274
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76dffede60ce4f340800000000000000
+      internalID: 4896798209364458855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_158
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 279
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2a7a1691f88eef0800000000000000
+      internalID: -78655654303653177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_159
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 264
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea656c0d5c69b4a0800000000000000
+      internalID: -6577106633902167314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_160
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 271
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28148978db538c80800000000000000
+      internalID: -8321706701140781014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_161
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 283
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1168228aaeb5bf150800000000000000
+      internalID: 5907416399627847185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_162
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 271
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdf42ec2eab8d1c0800000000000000
+      internalID: -4478624346136052292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_163
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 200
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e89fc65d1177fd0800000000000000
+      internalID: -2344385472669053311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_164
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 199
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf63059f1232b0c0800000000000000
+      internalID: -4561528361347485729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_165
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 191
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8fb879916c892a0800000000000000
+      internalID: -6730411829886191383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_166
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 199
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d91690509e20f60800000000000000
+      internalID: 7999212096004922754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_167
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 207
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a177e5f5f4f085450800000000000000
+      internalID: 6077624530713343770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_168
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 227
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691f084c2a166dd80800000000000000
+      internalID: -8226280317636251242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_169
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 175
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a06b3611b69981b0800000000000000
+      internalID: -5653822169860579163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_170
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 183
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21faf2cf1ea2f1530800000000000000
+      internalID: 3827825358375202578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_171
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 175
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ea16942fb667c90800000000000000
+      internalID: -7172426668183540094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_172
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 185
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3eb3c05e620fbd0800000000000000
+      internalID: -2598534219798158366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_173
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 175
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ab1061aed8c8040800000000000000
+      internalID: 4651248551697955393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_174
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 183
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45ebc2be5b887830800000000000000
+      internalID: 4069155502172136782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_175
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 166
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d424634205b33c0800000000000000
+      internalID: -4378818096228315875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_176
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 183
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3d700ef664cebd0800000000000000
+      internalID: -2599625438585695238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_177
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 199
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722774028b94cd0d0800000000000000
+      internalID: -3396758963779833305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_178
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 183
+        width: 70
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a268c85cd33fc90800000000000000
+      internalID: -7137293065776649700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_179
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 179
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3672d12836fa10e90800000000000000
+      internalID: -7061169898820655261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_180
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 167
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a41eb7ae46eb140800000000000000
+      internalID: 4737334816303827576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_181
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 170
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330db2cbd38461b40800000000000000
+      internalID: 5410591432319422515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_182
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 190
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc64f7ff98ff5490800000000000000
+      internalID: -7755206667365225220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_183
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 175
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0996f42419b31650800000000000000
+      internalID: 6202504607989930254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_184
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 199
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d802166440b05cd40800000000000000
+      internalID: 5603897424320995469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_185
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 195
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fea7b5a288c4bca0800000000000000
+      internalID: -6001951939926446352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_186
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 175
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4e94eb672c25a80800000000000000
+      internalID: -8479501333130779484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_187
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 167
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6e5719b5c274fe0800000000000000
+      internalID: -1204945603504249096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_188
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 167
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a120afc7f8efba0800000000000000
+      internalID: -6053243082206209521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_189
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 159
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7774a8b95681c7280800000000000000
+      internalID: -9044327126986504329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_190
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 166
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3030d0f11536b4ab0800000000000000
+      internalID: -5022811759337209085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_191
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 159
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7631525797a4fc50800000000000000
+      internalID: 6698162814169724538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_192
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 112
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793e463ab0caecfb0800000000000000
+      internalID: -4625570601277004905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_193
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 158
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d560ab8a05fcc740800000000000000
+      internalID: 5173779497582880214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_194
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 169
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473fa47cd7b25d9d0800000000000000
+      internalID: -2750244178225335436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_195
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 127
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553332fa4e0ea69a0800000000000000
+      internalID: -6238927060972915883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_196
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 95
+        width: 88
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f318b64ebcccf6ba0800000000000000
+      internalID: -6093426594726313665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_197
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 97
+        width: 88
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3906f760318c038e0800000000000000
+      internalID: -1715651473989214061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_198
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 98
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4abb177e070688e0800000000000000
+      internalID: -1691656851321800115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_199
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 118
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7c1bccceb784d40800000000000000
+      internalID: 5568837196220319722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_200
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 103
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23f946e633a501b0800000000000000
+      internalID: -5690963097925586129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_201
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 103
+        width: 96
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7435869bea0ecafb0800000000000000
+      internalID: -4635082875431529657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_202
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 103
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385048f79f8e80d90800000000000000
+      internalID: -7131193851657321085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_203
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 127
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2772131ea6dd0ca0800000000000000
+      internalID: -6048942681356077269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_204
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 72
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fa83007c0399f80800000000000000
+      internalID: -8099388823588786355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_205
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 79
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74e5c6f9a49c6cb0800000000000000
+      internalID: -4869353639383800706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_206
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 103
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71bc606884171820800000000000000
+      internalID: 2888800261947306364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_207
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 87
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2a85d966a628db0800000000000000
+      internalID: -4791150064609746184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_208
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 79
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5325364bbc065ed10800000000000000
+      internalID: 2154234424787685941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_209
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 103
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e440d08300c1dc10800000000000000
+      internalID: 2076652024473076960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_210
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 88
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acbcca188bddeced0800000000000000
+      internalID: -2391730567567848502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_211
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 87
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49615b4565b5d7fd0800000000000000
+      internalID: -2342615804816320876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_212
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 79
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925c558bee7132f80800000000000000
+      internalID: -8132630188038699735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_213
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 87
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5609ab3190aefc50800000000000000
+      internalID: 6700969841205511771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_214
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 72
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30b287478b9a5660800000000000000
+      internalID: 7375378345095245883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_215
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 79
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140556744a993dbd0800000000000000
+      internalID: -2606570828465876927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gravebloom_props_02_216
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 79
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679462d29c0c11260800000000000000
+      internalID: 7066641260599462262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gravebloom_props_02_0: 6204639933530703386
+      gravebloom_props_02_1: -5709987509068848949
+      gravebloom_props_02_10: -4823694047781355876
+      gravebloom_props_02_100: 806962904434970325
+      gravebloom_props_02_101: -3078445256817412485
+      gravebloom_props_02_102: 4750092742244939868
+      gravebloom_props_02_103: 476417177369047931
+      gravebloom_props_02_104: -2212820074402801078
+      gravebloom_props_02_105: 7228632778158277308
+      gravebloom_props_02_106: -8961441653642484773
+      gravebloom_props_02_107: 7113784305494264607
+      gravebloom_props_02_108: 6208583698774524956
+      gravebloom_props_02_109: -2891107572112689868
+      gravebloom_props_02_11: 3157477606459696355
+      gravebloom_props_02_110: 924055985873197292
+      gravebloom_props_02_111: 7262028313806993091
+      gravebloom_props_02_112: -2188129875529501163
+      gravebloom_props_02_113: 532066891206688581
+      gravebloom_props_02_114: 1852802978208460587
+      gravebloom_props_02_115: 240212987953489972
+      gravebloom_props_02_116: 2631526654389206348
+      gravebloom_props_02_117: 631151829695768433
+      gravebloom_props_02_118: 1369705480190336932
+      gravebloom_props_02_119: 1092120296232380709
+      gravebloom_props_02_12: 4220889973591626326
+      gravebloom_props_02_120: -744105312363159984
+      gravebloom_props_02_121: 1973166790582042840
+      gravebloom_props_02_122: 4772530965862351730
+      gravebloom_props_02_123: -6934994896836367998
+      gravebloom_props_02_124: 5629287288504875401
+      gravebloom_props_02_125: 6130490217713921040
+      gravebloom_props_02_126: 9195760044176939676
+      gravebloom_props_02_127: 2135011637559186934
+      gravebloom_props_02_128: -8409534701212163747
+      gravebloom_props_02_129: 1052506860710622173
+      gravebloom_props_02_13: -7145894725958972427
+      gravebloom_props_02_130: -1193941217409791998
+      gravebloom_props_02_131: -8345625941454105015
+      gravebloom_props_02_132: 5872910629722583088
+      gravebloom_props_02_133: -3352941291971302741
+      gravebloom_props_02_134: 4294461487407768244
+      gravebloom_props_02_135: 4584230853763144546
+      gravebloom_props_02_136: -8569819698956201752
+      gravebloom_props_02_137: 1201669323406128542
+      gravebloom_props_02_138: 359678500959535744
+      gravebloom_props_02_139: -4692538282709787845
+      gravebloom_props_02_14: 2430094341016933184
+      gravebloom_props_02_140: -1814639270363206734
+      gravebloom_props_02_141: -3909816508136965681
+      gravebloom_props_02_142: 1111974722070096311
+      gravebloom_props_02_143: 2377011551427485741
+      gravebloom_props_02_144: -1454436818849010253
+      gravebloom_props_02_145: -9035023215626870071
+      gravebloom_props_02_146: -6318119010795824341
+      gravebloom_props_02_147: 4908409656450634492
+      gravebloom_props_02_148: 1674394343686164862
+      gravebloom_props_02_149: -4344798702855801490
+      gravebloom_props_02_15: 5163675760727426691
+      gravebloom_props_02_150: 3105625592890563344
+      gravebloom_props_02_151: -6306714772984729613
+      gravebloom_props_02_152: 9156339379476836032
+      gravebloom_props_02_153: 722870443528730321
+      gravebloom_props_02_154: 6334689750073553502
+      gravebloom_props_02_155: -4186181104482351442
+      gravebloom_props_02_156: -5927497062491253487
+      gravebloom_props_02_157: 4896798209364458855
+      gravebloom_props_02_158: -78655654303653177
+      gravebloom_props_02_159: -6577106633902167314
+      gravebloom_props_02_16: 6826908788456338022
+      gravebloom_props_02_160: -8321706701140781014
+      gravebloom_props_02_161: 5907416399627847185
+      gravebloom_props_02_162: -4478624346136052292
+      gravebloom_props_02_163: -2344385472669053311
+      gravebloom_props_02_164: -4561528361347485729
+      gravebloom_props_02_165: -6730411829886191383
+      gravebloom_props_02_166: 7999212096004922754
+      gravebloom_props_02_167: 6077624530713343770
+      gravebloom_props_02_168: -8226280317636251242
+      gravebloom_props_02_169: -5653822169860579163
+      gravebloom_props_02_17: 3974085496915465028
+      gravebloom_props_02_170: 3827825358375202578
+      gravebloom_props_02_171: -7172426668183540094
+      gravebloom_props_02_172: -2598534219798158366
+      gravebloom_props_02_173: 4651248551697955393
+      gravebloom_props_02_174: 4069155502172136782
+      gravebloom_props_02_175: -4378818096228315875
+      gravebloom_props_02_176: -2599625438585695238
+      gravebloom_props_02_177: -3396758963779833305
+      gravebloom_props_02_178: -7137293065776649700
+      gravebloom_props_02_179: -7061169898820655261
+      gravebloom_props_02_18: 559221357024136993
+      gravebloom_props_02_180: 4737334816303827576
+      gravebloom_props_02_181: 5410591432319422515
+      gravebloom_props_02_182: -7755206667365225220
+      gravebloom_props_02_183: 6202504607989930254
+      gravebloom_props_02_184: 5603897424320995469
+      gravebloom_props_02_185: -6001951939926446352
+      gravebloom_props_02_186: -8479501333130779484
+      gravebloom_props_02_187: -1204945603504249096
+      gravebloom_props_02_188: -6053243082206209521
+      gravebloom_props_02_189: -9044327126986504329
+      gravebloom_props_02_19: -5132498641540306814
+      gravebloom_props_02_190: -5022811759337209085
+      gravebloom_props_02_191: 6698162814169724538
+      gravebloom_props_02_192: -4625570601277004905
+      gravebloom_props_02_193: 5173779497582880214
+      gravebloom_props_02_194: -2750244178225335436
+      gravebloom_props_02_195: -6238927060972915883
+      gravebloom_props_02_196: -6093426594726313665
+      gravebloom_props_02_197: -1715651473989214061
+      gravebloom_props_02_198: -1691656851321800115
+      gravebloom_props_02_199: 5568837196220319722
+      gravebloom_props_02_2: -2774047500815942887
+      gravebloom_props_02_20: -8189115138850653391
+      gravebloom_props_02_200: -5690963097925586129
+      gravebloom_props_02_201: -4635082875431529657
+      gravebloom_props_02_202: -7131193851657321085
+      gravebloom_props_02_203: -6048942681356077269
+      gravebloom_props_02_204: -8099388823588786355
+      gravebloom_props_02_205: -4869353639383800706
+      gravebloom_props_02_206: 2888800261947306364
+      gravebloom_props_02_207: -4791150064609746184
+      gravebloom_props_02_208: 2154234424787685941
+      gravebloom_props_02_209: 2076652024473076960
+      gravebloom_props_02_21: -921651749706404706
+      gravebloom_props_02_210: -2391730567567848502
+      gravebloom_props_02_211: -2342615804816320876
+      gravebloom_props_02_212: -8132630188038699735
+      gravebloom_props_02_213: 6700969841205511771
+      gravebloom_props_02_214: 7375378345095245883
+      gravebloom_props_02_215: -2606570828465876927
+      gravebloom_props_02_216: 7066641260599462262
+      gravebloom_props_02_22: -5069725727997628382
+      gravebloom_props_02_23: 384420322754377104
+      gravebloom_props_02_24: 985574322761831150
+      gravebloom_props_02_25: 7593691635324464602
+      gravebloom_props_02_26: -510167995284047432
+      gravebloom_props_02_27: 8342011899652190456
+      gravebloom_props_02_28: 6465361527933506582
+      gravebloom_props_02_29: 5862665251598150512
+      gravebloom_props_02_3: -1328589734256531054
+      gravebloom_props_02_30: -4844571986761189686
+      gravebloom_props_02_31: 6027974459277301702
+      gravebloom_props_02_32: -6058809024286131461
+      gravebloom_props_02_33: -1584200899804412616
+      gravebloom_props_02_34: -3668536493903647495
+      gravebloom_props_02_35: 6776139082318817714
+      gravebloom_props_02_36: 7701777628494225610
+      gravebloom_props_02_37: 7216645127209025438
+      gravebloom_props_02_38: -109162910817178688
+      gravebloom_props_02_39: 2946699582309555653
+      gravebloom_props_02_4: 7312139726136070120
+      gravebloom_props_02_40: 8410986309301244315
+      gravebloom_props_02_41: 6734619827600953688
+      gravebloom_props_02_42: 519998003253804637
+      gravebloom_props_02_43: -2892574198551244203
+      gravebloom_props_02_44: 3110940473496405426
+      gravebloom_props_02_45: -8408423408144068782
+      gravebloom_props_02_46: -1081545679518732195
+      gravebloom_props_02_47: 6487516235088938701
+      gravebloom_props_02_48: 6729759715777523031
+      gravebloom_props_02_49: -8658898272079284765
+      gravebloom_props_02_5: -1810810699576962291
+      gravebloom_props_02_50: 6805381356248748369
+      gravebloom_props_02_51: -6239442137691695857
+      gravebloom_props_02_52: -7023117731457560571
+      gravebloom_props_02_53: -6352221912218141579
+      gravebloom_props_02_54: -3988898367896128318
+      gravebloom_props_02_55: -5208088676180075065
+      gravebloom_props_02_56: -2434079725558410415
+      gravebloom_props_02_57: 2005533329734366662
+      gravebloom_props_02_58: 9203385646344935741
+      gravebloom_props_02_59: 209081917308350040
+      gravebloom_props_02_6: 4535479203922696384
+      gravebloom_props_02_60: 2631457037727080862
+      gravebloom_props_02_61: 6747793819673267605
+      gravebloom_props_02_62: 1586302796719496141
+      gravebloom_props_02_63: -7695822282060437762
+      gravebloom_props_02_64: -7987770321454722162
+      gravebloom_props_02_65: 6145163993342689651
+      gravebloom_props_02_66: -8637863205962214714
+      gravebloom_props_02_67: 972580417399913660
+      gravebloom_props_02_68: -7142598953720615562
+      gravebloom_props_02_69: 5485872167200130529
+      gravebloom_props_02_7: -2916081524728382307
+      gravebloom_props_02_70: 6537660284788012949
+      gravebloom_props_02_71: -366886342021871885
+      gravebloom_props_02_72: -8803146932326537494
+      gravebloom_props_02_73: -7157243483910563376
+      gravebloom_props_02_74: 649699265759249075
+      gravebloom_props_02_75: 5650640513225669057
+      gravebloom_props_02_76: 6276989942678867179
+      gravebloom_props_02_77: 3783149943754304144
+      gravebloom_props_02_78: -4396006267765923841
+      gravebloom_props_02_79: 4314470428128142603
+      gravebloom_props_02_8: -7419738009549683293
+      gravebloom_props_02_80: -874972043737523039
+      gravebloom_props_02_81: -2457499402750275345
+      gravebloom_props_02_82: -1931468658311992260
+      gravebloom_props_02_83: 6416528700420819057
+      gravebloom_props_02_84: -2699723068640923852
+      gravebloom_props_02_85: -4388669970615332793
+      gravebloom_props_02_86: 6487377772433684398
+      gravebloom_props_02_87: -8495243557340526466
+      gravebloom_props_02_88: 477546689500611512
+      gravebloom_props_02_89: 1964135276239636115
+      gravebloom_props_02_9: -2345115695319842061
+      gravebloom_props_02_90: -6102214570764911079
+      gravebloom_props_02_91: 4930698188574889977
+      gravebloom_props_02_92: -2742763594622080577
+      gravebloom_props_02_93: -5819875159620177932
+      gravebloom_props_02_94: 1728507728345138104
+      gravebloom_props_02_95: 8881948838344633035
+      gravebloom_props_02_96: -445883397359298950
+      gravebloom_props_02_97: -5627081151931495256
+      gravebloom_props_02_98: -5353331232468085810
+      gravebloom_props_02_99: 1619084502376249866
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

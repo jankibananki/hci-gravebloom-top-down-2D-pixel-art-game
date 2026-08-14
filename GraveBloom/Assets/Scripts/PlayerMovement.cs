@@ -29,6 +29,10 @@ public class PlayerMovement : MonoBehaviour
         if (Keyboard.current == null)
             return;
 
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            animator.SetTrigger("Cast");
+        }
         if (Keyboard.current.wKey.isPressed)
             movement.y += 1;
 

@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     // Kad se igra pokrene, gleda dole
     private Vector2 lastDirection = Vector2.down;
 
+    public Vector2 LastDirection => lastDirection;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,10 +31,6 @@ public class PlayerMovement : MonoBehaviour
         if (Keyboard.current == null)
             return;
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            animator.SetTrigger("Cast");
-        }
         if (Keyboard.current.wKey.isPressed)
             movement.y += 1;
 

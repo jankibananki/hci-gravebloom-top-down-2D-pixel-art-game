@@ -14,7 +14,7 @@ public class PlayerShield : MonoBehaviour
     public float cooldownDuration = 5f;
     public Image cooldownImage;
 
-    // 0 = ready/prazno
+    // 0 = ready
     // 1 = broj 1
     // 2 = broj 2
     // ...
@@ -30,20 +30,26 @@ public class PlayerShield : MonoBehaviour
 
     void Start()
     {
-        shieldAnimator = shieldObject.GetComponent<Animator>();
+        shieldAnimator =
+            shieldObject.GetComponent<Animator>();
 
         shieldObject.SetActive(false);
 
-        // Na početku je shield spreman
-        cooldownImage.sprite = cooldownSprites[0];
+        if (cooldownImage != null &&
+            cooldownSprites.Length > 0)
+        {
+            cooldownImage.sprite =
+                cooldownSprites[0];
+        }
     }
 
     void Update()
     {
-        if (Keyboard.current == null)
+        if (Mouse.current == null)
             return;
 
-        if (Keyboard.current.qKey.wasPressedThisFrame)
+        // DESNI KLIK = SHIELD
+        if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             ActivateShield();
         }
@@ -51,8 +57,6 @@ public class PlayerShield : MonoBehaviour
 
     void ActivateShield()
     {
-        // Ne može novi shield dok je aktivan
-        // niti dok traje cooldown
         if (shieldActive || onCooldown)
             return;
 
@@ -60,14 +64,23 @@ public class PlayerShield : MonoBehaviour
 
         shieldObject.SetActive(true);
 
-        shieldAnimator.Play("shieldAppear", 0, 0f);
+        shieldAnimator.Play(
+            "shieldAppear",
+            0,
+            0f
+        );
 
-        shieldTimer = StartCoroutine(ShieldLifetime());
+        shieldTimer =
+            StartCoroutine(ShieldLifetime());
     }
 
     IEnumerator ShieldLifetime()
     {
-        yield return new WaitForSeconds(shieldDuration);
+        yield return new WaitForSeconds(
+            shieldDuration
+        );
+
+        shieldTimer = null;
 
         if (shieldActive)
         {
@@ -85,6 +98,9 @@ public class PlayerShield : MonoBehaviour
 
     void DestroyShield()
     {
+        if (!shieldActive)
+            return;
+
         shieldActive = false;
 
         if (shieldTimer != null)
@@ -93,15 +109,26 @@ public class PlayerShield : MonoBehaviour
             shieldTimer = null;
         }
 
-        shieldAnimator.Play("shieldDestroy", 0, 0f);
+        shieldAnimator.Play(
+            "shieldDestroy",
+            0,
+            0f
+        );
 
-        StartCoroutine(DisableShieldAfterBreak());
-        StartCoroutine(ShieldCooldown());
+        StartCoroutine(
+            DisableShieldAfterBreak()
+        );
+
+        StartCoroutine(
+            ShieldCooldown()
+        );
     }
 
     IEnumerator DisableShieldAfterBreak()
     {
-        yield return new WaitForSeconds(breakAnimationTime);
+        yield return new WaitForSeconds(
+            breakAnimationTime
+        );
 
         shieldObject.SetActive(false);
     }
@@ -110,25 +137,32 @@ public class PlayerShield : MonoBehaviour
     {
         onCooldown = true;
 
-        float remaining = cooldownDuration;
+        float remaining =
+            cooldownDuration;
+
         int previousNumber = -1;
 
-        while (remaining > 0)
+        while (remaining > 0f)
         {
-            int number = Mathf.CeilToInt(remaining);
+            int number =
+                Mathf.CeilToInt(remaining);
 
             if (number != previousNumber)
             {
                 previousNumber = number;
 
-                // Za slučaj da kasnije staviš drugi cooldown
-                number = Mathf.Clamp(
-                    number,
-                    1,
-                    cooldownSprites.Length - 1
-                );
+                if (cooldownSprites.Length > 1 &&
+                    cooldownImage != null)
+                {
+                    number = Mathf.Clamp(
+                        number,
+                        1,
+                        cooldownSprites.Length - 1
+                    );
 
-                cooldownImage.sprite = cooldownSprites[number];
+                    cooldownImage.sprite =
+                        cooldownSprites[number];
+                }
             }
 
             remaining -= Time.deltaTime;
@@ -138,8 +172,12 @@ public class PlayerShield : MonoBehaviour
 
         onCooldown = false;
 
-        // Prazno prozorče = shield spreman
-        cooldownImage.sprite = cooldownSprites[0];
+        if (cooldownImage != null &&
+            cooldownSprites.Length > 0)
+        {
+            cooldownImage.sprite =
+                cooldownSprites[0];
+        }
     }
 
     public bool IsShieldActive()

@@ -6,21 +6,22 @@ public class PlayerAttack : MonoBehaviour
     public GameObject projectilePrefab;
     public float spawnDistance = 0.6f;
 
-    private PlayerMovement movement;
+    private PlayerAim aim;
     private Animator animator;
 
     void Awake()
     {
-        movement = GetComponent<PlayerMovement>();
+        aim = GetComponent<PlayerAim>();
         animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (Keyboard.current == null)
+        if (Mouse.current == null)
             return;
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        // LEVI KLIK = normal spell
+        if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Cast();
         }
@@ -28,12 +29,19 @@ public class PlayerAttack : MonoBehaviour
 
     void Cast()
     {
-        Vector2 direction = movement.LastDirection;
+        Vector2 direction = aim.AimDirection;
+
+        // Biramo najbližu od 4 postojeće cast animacije
+        Vector2 cardinalDirection = aim.GetCardinalDirection();
+
+        animator.SetFloat("AimX", cardinalDirection.x);
+        animator.SetFloat("AimY", cardinalDirection.y);
 
         animator.SetTrigger("Cast");
 
         Vector2 spawnPosition =
-            (Vector2)transform.position + direction * spawnDistance;
+            (Vector2)transform.position +
+            direction * spawnDistance;
 
         GameObject projectile = Instantiate(
             projectilePrefab,
@@ -41,6 +49,8 @@ public class PlayerAttack : MonoBehaviour
             Quaternion.identity
         );
 
-        projectile.GetComponent<MagicProjectile>().Shoot(direction);
+        projectile
+            .GetComponent<MagicProjectile>()
+            .Shoot(direction);
     }
 }

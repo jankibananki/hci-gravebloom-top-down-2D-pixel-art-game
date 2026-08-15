@@ -12,9 +12,15 @@ public class MagicProjectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void Shoot(Vector2 direction)
+   public void Shoot(Vector2 direction)
     {
-        rb.linearVelocity = direction.normalized * speed;
+        direction = direction.normalized;
+
+        rb.linearVelocity = direction * speed;
+
+        // Sprite je originalno nacrtan da leti DESNO
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle);
 
         Destroy(gameObject, lifetime);
     }

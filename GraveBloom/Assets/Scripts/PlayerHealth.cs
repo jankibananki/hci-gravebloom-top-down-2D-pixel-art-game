@@ -88,20 +88,20 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void Die()
-{
-    PlayerMovement movement =
-        GetComponent<PlayerMovement>();
+    {
+        PlayerMovement movement =
+            GetComponent<PlayerMovement>();
 
-    if (movement != null)
-        movement.SetDead();
+        if (movement != null)
+            movement.SetDead();
 
-    Animator animator =
-        GetComponent<Animator>();
+        Animator animator =
+            GetComponent<Animator>();
 
-    if (animator != null)
-        animator.SetTrigger("Die");
+        if (animator != null)
+            animator.SetTrigger("Die");
 
-    if (gameOverUI != null)
-        gameOverUI.ShowGameOver();
-}
+        if (gameOverUI != null)
+            gameOverUI.ShowGameOver();
+    }
 }

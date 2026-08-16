@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
     public float projectileSpawnDistance = 0.6f;
     public float attackCooldown = 2f;
     public float castDelay = 0.35f;
-
+    private bool isDead = false;
     private Transform player;
     private Rigidbody2D rb;
     private Animator animator;
@@ -43,6 +43,12 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        if (isDead)
+        {
+            moveDirection = Vector2.zero;
+            return;
+        }
+
         if (player == null)
             return;
 
@@ -93,6 +99,12 @@ public class EnemyAI : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDead)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         if (isCasting)
         {
             rb.linearVelocity = Vector2.zero;
@@ -177,5 +189,18 @@ public class EnemyAI : MonoBehaviour
         yield return new WaitForSeconds(attackCooldown);
 
         attackOnCooldown = false;
+    }
+
+    public void SetDead()
+    {
+        isDead = true;
+
+        StopAllCoroutines();
+
+        moveDirection = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
+
+        animator.SetBool("IsMoving", false);
+        animator.ResetTrigger("Cast");
     }
 }

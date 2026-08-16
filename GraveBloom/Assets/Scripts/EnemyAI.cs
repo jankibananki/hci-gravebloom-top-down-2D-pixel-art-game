@@ -8,12 +8,18 @@ public class EnemyAI : MonoBehaviour
     public float detectionRange = 8f;
     public float attackRange = 5f;
 
+    [Header("Obstacle Avoidance")]
+    public LayerMask obstacleLayer;
+
+    public float obstacleCheckDistance = 1.2f;
+    public float obstacleCheckRadius = 0.3f;
+
     [Header("Attack")]
     public GameObject projectilePrefab;
     public float projectileSpawnDistance = 0.6f;
     public float attackCooldown = 2f;
     public float castDelay = 0.35f;
-    private bool isDead = false;
+
     private Transform player;
     private Rigidbody2D rb;
     private Animator animator;
@@ -23,6 +29,7 @@ public class EnemyAI : MonoBehaviour
 
     private bool isCasting = false;
     private bool attackOnCooldown = false;
+    private bool isDead = false;
 
     void Awake()
     {
@@ -60,7 +67,10 @@ public class EnemyAI : MonoBehaviour
         }
 
         float distance =
-            Vector2.Distance(transform.position, player.position);
+            Vector2.Distance(
+                transform.position,
+                player.position
+            );
 
         // Player je predaleko
         if (distance > detectionRange)
@@ -89,23 +99,22 @@ public class EnemyAI : MonoBehaviour
             return;
         }
 
-        // Player je primećen, ali nije dovoljno blizu
-        moveDirection = directionToPlayer;
+        // Player je primećen:
+        // idi prema njemu, ali izbegavaj prepreke
+        moveDirection =
+            GetObstacleAvoidanceDirection(directionToPlayer);
 
-        animator.SetBool("IsMoving", true);
+        animator.SetBool(
+            "IsMoving",
+            moveDirection != Vector2.zero
+        );
 
-        FaceDirection(directionToPlayer);
+        FaceDirection(moveDirection);
     }
 
     void FixedUpdate()
     {
-        if (isDead)
-        {
-            rb.linearVelocity = Vector2.zero;
-            return;
-        }
-
-        if (isCasting)
+        if (isDead || isCasting)
         {
             rb.linearVelocity = Vector2.zero;
             return;
@@ -115,19 +124,98 @@ public class EnemyAI : MonoBehaviour
             moveDirection * moveSpeed;
     }
 
+    Vector2 GetObstacleAvoidanceDirection(
+        Vector2 desiredDirection)
+    {
+        // Proveri da li nešto blokira direktan put
+        RaycastHit2D frontHit =
+            Physics2D.CircleCast(
+                transform.position,
+                obstacleCheckRadius,
+                desiredDirection,
+                obstacleCheckDistance,
+                obstacleLayer
+            );
+
+        // Nema prepreke → pravo ka playeru
+        if (!frontHit)
+            return desiredDirection;
+
+        // Pravci 90° levo/desno od trenutnog pravca
+        Vector2 leftDirection =
+            new Vector2(
+                -desiredDirection.y,
+                desiredDirection.x
+            ).normalized;
+
+        Vector2 rightDirection =
+            new Vector2(
+                desiredDirection.y,
+                -desiredDirection.x
+            ).normalized;
+
+        float leftClearance =
+            GetClearance(leftDirection);
+
+        float rightClearance =
+            GetClearance(rightDirection);
+
+        Vector2 avoidanceDirection;
+
+        if (leftClearance > rightClearance)
+            avoidanceDirection = leftDirection;
+        else
+            avoidanceDirection = rightDirection;
+
+        // Ne ide potpuno bočno,
+        // nego pokušava i dalje malo prema playeru
+        Vector2 combinedDirection =
+            desiredDirection * 0.35f +
+            avoidanceDirection * 0.65f;
+
+        return combinedDirection.normalized;
+    }
+
+    float GetClearance(Vector2 direction)
+    {
+        RaycastHit2D hit =
+            Physics2D.CircleCast(
+                transform.position,
+                obstacleCheckRadius,
+                direction,
+                obstacleCheckDistance,
+                obstacleLayer
+            );
+
+        if (!hit)
+            return obstacleCheckDistance;
+
+        return hit.distance;
+    }
+
     void FaceDirection(Vector2 direction)
     {
+        if (direction == Vector2.zero)
+            return;
+
         Vector2 cardinal;
 
-        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        if (Mathf.Abs(direction.x) >
+            Mathf.Abs(direction.y))
         {
             cardinal =
-                new Vector2(Mathf.Sign(direction.x), 0);
+                new Vector2(
+                    Mathf.Sign(direction.x),
+                    0
+                );
         }
         else
         {
             cardinal =
-                new Vector2(0, Mathf.Sign(direction.y));
+                new Vector2(
+                    0,
+                    Mathf.Sign(direction.y)
+                );
         }
 
         lastDirection = cardinal;
@@ -146,17 +234,26 @@ public class EnemyAI : MonoBehaviour
         isCasting = true;
         attackOnCooldown = true;
 
+        rb.linearVelocity = Vector2.zero;
+
         Vector2 cardinal;
 
-        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        if (Mathf.Abs(direction.x) >
+            Mathf.Abs(direction.y))
         {
             cardinal =
-                new Vector2(Mathf.Sign(direction.x), 0);
+                new Vector2(
+                    Mathf.Sign(direction.x),
+                    0
+                );
         }
         else
         {
             cardinal =
-                new Vector2(0, Mathf.Sign(direction.y));
+                new Vector2(
+                    0,
+                    Mathf.Sign(direction.y)
+                );
         }
 
         animator.SetFloat("AimX", cardinal.x);
@@ -164,8 +261,11 @@ public class EnemyAI : MonoBehaviour
 
         animator.SetTrigger("Cast");
 
-        // čeka da animacija dođe do dela gde baca spell
         yield return new WaitForSeconds(castDelay);
+
+        // Ako je umro dok castuje
+        if (isDead)
+            yield break;
 
         Vector2 spawnPosition =
             (Vector2)transform.position +
@@ -186,13 +286,18 @@ public class EnemyAI : MonoBehaviour
 
         isCasting = false;
 
-        yield return new WaitForSeconds(attackCooldown);
+        yield return new WaitForSeconds(
+            attackCooldown
+        );
 
         attackOnCooldown = false;
     }
 
     public void SetDead()
     {
+        if (isDead)
+            return;
+
         isDead = true;
 
         StopAllCoroutines();

@@ -10,18 +10,28 @@ public class MagicProjectile : MonoBehaviour
     [Header("Damage")]
     public int damage = 1;
 
+    // Koliko projectile uđe u enemija
+    // pre nego što nestane
+    public float hitPenetration = 0.3f;
+
     [Header("Fade")]
     public float fadeStartPercent = 0.85f;
 
     private Rigidbody2D rb;
+    private Collider2D projectileCollider;
+
     private Vector2 startPosition;
+    private Vector2 hitStartPosition;
+
     private SpriteRenderer[] spriteRenderers;
 
-    private bool hasHit = false;
+    private bool hasHitEnemy = false;
+    private EnemyHealth enemyHit;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        projectileCollider = GetComponent<Collider2D>();
 
         spriteRenderers =
             GetComponentsInChildren<SpriteRenderer>();
@@ -36,6 +46,7 @@ public class MagicProjectile : MonoBehaviour
         rb.linearVelocity =
             direction * speed;
 
+        // Sprite je nacrtan da gleda desno
         float angle =
             Mathf.Atan2(direction.y, direction.x)
             * Mathf.Rad2Deg;
@@ -48,6 +59,27 @@ public class MagicProjectile : MonoBehaviour
 
     void Update()
     {
+        // Ako smo već dotakli enemija,
+        // pusti projectile još malo unutra
+        if (hasHitEnemy)
+        {
+            float penetration =
+                Vector2.Distance(
+                    hitStartPosition,
+                    transform.position
+                );
+
+            if (penetration >= hitPenetration)
+            {
+                if (enemyHit != null)
+                    enemyHit.TakeDamage(damage);
+
+                Destroy(gameObject);
+            }
+
+            return;
+        }
+
         float distanceTravelled =
             Vector2.Distance(
                 startPosition,
@@ -77,31 +109,28 @@ public class MagicProjectile : MonoBehaviour
         }
 
         if (distanceTravelled >= maxRange)
-        {
             Destroy(gameObject);
-        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (hasHit)
+        if (hasHitEnemy)
             return;
 
         EnemyHealth enemy =
             other.GetComponentInParent<EnemyHealth>();
 
-        if (enemy != null)
-        {
-            hasHit = true;
-
-            Debug.Log("BASIC HIT ENEMY!");
-
-            enemy.TakeDamage(damage);
-
-            // magic sprite odmah nestaje
-            Destroy(gameObject);
-
+        if (enemy == null)
             return;
-        }
+
+        hasHitEnemy = true;
+        enemyHit = enemy;
+
+        hitStartPosition = transform.position;
+
+        // Da ne registruje još 37 collidera
+        // dok ulazi u skeletona
+        if (projectileCollider != null)
+            projectileCollider.enabled = false;
     }
 }

@@ -13,6 +13,20 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 lastDirection = Vector2.down;
 
     public Vector2 LastDirection => lastDirection;
+    
+    private bool movementLocked = false;
+
+    public void SetMovementLocked(bool locked)
+    {
+        movementLocked = locked;
+
+        if (locked)
+        {
+            movement = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("IsMoving", false);
+        }
+    }
 
     void Awake()
     {
@@ -27,6 +41,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         movement = Vector2.zero;
+
+        if (movementLocked)
+        {
+            movement = Vector2.zero;
+            return;
+        }
 
         if (Keyboard.current == null)
             return;

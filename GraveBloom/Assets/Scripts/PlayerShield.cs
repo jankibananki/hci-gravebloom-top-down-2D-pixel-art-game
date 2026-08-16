@@ -7,14 +7,14 @@ public class PlayerShield : MonoBehaviour
 {
     [Header("Shield")]
     public GameObject shieldObject;
-    public float shieldDuration = 7f;
+    public float shieldDuration = 4f;
     public float breakAnimationTime = 0.5f;
 
     [Header("Cooldown")]
-    public float cooldownDuration = 5f;
+    public float cooldownDuration = 15f;
     public Image cooldownImage;
 
-    // 0 = ready
+    // 0 = ready/prazno
     // 1 = broj 1
     // 2 = broj 2
     // ...
@@ -30,16 +30,13 @@ public class PlayerShield : MonoBehaviour
 
     void Start()
     {
-        shieldAnimator =
-            shieldObject.GetComponent<Animator>();
+        shieldAnimator = shieldObject.GetComponent<Animator>();
 
         shieldObject.SetActive(false);
 
-        if (cooldownImage != null &&
-            cooldownSprites.Length > 0)
+        if (cooldownImage != null && cooldownSprites.Length > 0)
         {
-            cooldownImage.sprite =
-                cooldownSprites[0];
+            cooldownImage.sprite = cooldownSprites[0];
         }
     }
 
@@ -48,7 +45,7 @@ public class PlayerShield : MonoBehaviour
         if (Mouse.current == null)
             return;
 
-        // DESNI KLIK = SHIELD
+        // DESNI KLIK = shield
         if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             ActivateShield();
@@ -64,21 +61,18 @@ public class PlayerShield : MonoBehaviour
 
         shieldObject.SetActive(true);
 
-        shieldAnimator.Play(
-            "shieldAppear",
-            0,
-            0f
-        );
+        shieldAnimator.Play("shieldAppear", 0, 0f);
 
-        shieldTimer =
-            StartCoroutine(ShieldLifetime());
+        // Shield traje određeno vreme
+        shieldTimer = StartCoroutine(ShieldLifetime());
+
+        // COOLDOWN KREĆE ODMAH NAKON CASTA
+        StartCoroutine(ShieldCooldown());
     }
 
     IEnumerator ShieldLifetime()
     {
-        yield return new WaitForSeconds(
-            shieldDuration
-        );
+        yield return new WaitForSeconds(shieldDuration);
 
         shieldTimer = null;
 
@@ -109,26 +103,17 @@ public class PlayerShield : MonoBehaviour
             shieldTimer = null;
         }
 
-        shieldAnimator.Play(
-            "shieldDestroy",
-            0,
-            0f
-        );
+        shieldAnimator.Play("shieldDestroy", 0, 0f);
 
-        StartCoroutine(
-            DisableShieldAfterBreak()
-        );
+        StartCoroutine(DisableShieldAfterBreak());
 
-        StartCoroutine(
-            ShieldCooldown()
-        );
+        // OVO VIŠE NIJE OVDE:
+        // StartCoroutine(ShieldCooldown());
     }
 
     IEnumerator DisableShieldAfterBreak()
     {
-        yield return new WaitForSeconds(
-            breakAnimationTime
-        );
+        yield return new WaitForSeconds(breakAnimationTime);
 
         shieldObject.SetActive(false);
     }
@@ -137,22 +122,19 @@ public class PlayerShield : MonoBehaviour
     {
         onCooldown = true;
 
-        float remaining =
-            cooldownDuration;
-
+        float remaining = cooldownDuration;
         int previousNumber = -1;
 
         while (remaining > 0f)
         {
-            int number =
-                Mathf.CeilToInt(remaining);
+            int number = Mathf.CeilToInt(remaining);
 
             if (number != previousNumber)
             {
                 previousNumber = number;
 
-                if (cooldownSprites.Length > 1 &&
-                    cooldownImage != null)
+                if (cooldownImage != null &&
+                    cooldownSprites.Length > 1)
                 {
                     number = Mathf.Clamp(
                         number,

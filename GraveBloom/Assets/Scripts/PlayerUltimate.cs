@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerUltimate : MonoBehaviour
 {
@@ -14,18 +15,33 @@ public class PlayerUltimate : MonoBehaviour
     public float castDelay = 0.35f;
 
     [Header("Cooldown")]
-    public float cooldown = 8f;
+    public float cooldownDuration = 25f;
+
+    public Image cooldownImage;
+
+    public Sprite[] cooldownSprites;
 
     private PlayerAim aim;
     private Animator playerAnimator;
 
     private bool onCooldown = false;
 
+    private PlayerMovement movement;
+
     void Awake()
     {
         aim = GetComponent<PlayerAim>();
-        playerAnimator =
-            GetComponent<Animator>();
+        movement = GetComponent<PlayerMovement>();
+        playerAnimator = GetComponent<Animator>();
+    }
+
+    void Start()
+    {
+        if (cooldownImage != null &&
+            cooldownSprites.Length > 0)
+        {
+            cooldownImage.sprite = cooldownSprites[0];
+        }
     }
 
     void Update()
@@ -37,44 +53,26 @@ public class PlayerUltimate : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame &&
             !onCooldown)
         {
-            StartCoroutine(
-                CastUltimate()
-            );
+            StartCoroutine(CastUltimate());
         }
     }
 
     IEnumerator CastUltimate()
     {
-        onCooldown = true;
+       onCooldown = true;
 
-        // Zapamtimo TAČAN smer
-        // u trenutku pritiska Space-a
-        Vector2 direction =
-            aim.AimDirection;
+        movement.SetMovementLocked(true);
 
-        // Ali witch cast animacija ostaje
-        // jedna od postojeće 4
-        Vector2 cardinalDirection =
-            aim.GetCardinalDirection();
+        StartCoroutine(UltimateCooldown());
 
-        playerAnimator.SetFloat(
-            "AimX",
-            cardinalDirection.x
-        );
+        Vector2 direction = aim.AimDirection;
+        Vector2 cardinalDirection = aim.GetCardinalDirection();
 
-        playerAnimator.SetFloat(
-            "AimY",
-            cardinalDirection.y
-        );
+        playerAnimator.SetFloat("AimX", cardinalDirection.x);
+        playerAnimator.SetFloat("AimY", cardinalDirection.y);
+        playerAnimator.SetTrigger("Cast");
 
-        playerAnimator.SetTrigger(
-            "Cast"
-        );
-
-        // Sačekamo trenutak u cast animaciji
-        yield return new WaitForSeconds(
-            castDelay
-        );
+        yield return new WaitForSeconds(castDelay);
 
         Vector2 spawnPosition =
             (Vector2)transform.position +
@@ -86,8 +84,7 @@ public class PlayerUltimate : MonoBehaviour
             Quaternion.identity
         );
 
-        // Pošto je originalni beam nacrtan DESNO,
-        // rotiramo ga tačno ka mišu
+        // Rotacija ka mišu
         float angle =
             Mathf.Atan2(
                 direction.y,
@@ -116,6 +113,7 @@ public class PlayerUltimate : MonoBehaviour
         yield return new WaitForSeconds(
             beamDuration
         );
+        movement.SetMovementLocked(false);
 
         if (beamAnimator != null)
         {
@@ -126,16 +124,53 @@ public class PlayerUltimate : MonoBehaviour
             );
         }
 
-        yield return new WaitForSeconds(
-            0.3f
-        );
+        yield return new WaitForSeconds(0.3f);
 
         Destroy(beam);
+    }
 
-        yield return new WaitForSeconds(
-            cooldown
-        );
+    IEnumerator UltimateCooldown()
+    {
+        float remaining = cooldownDuration;
+
+        int previousNumber = -1;
+
+        while (remaining > 0f)
+        {
+            int number =
+                Mathf.CeilToInt(remaining);
+
+            if (number != previousNumber)
+            {
+                previousNumber = number;
+
+                if (cooldownImage != null &&
+                    cooldownSprites.Length > 1)
+                {
+                    number = Mathf.Clamp(
+                        number,
+                        1,
+                        cooldownSprites.Length - 1
+                    );
+
+                    cooldownImage.sprite =
+                        cooldownSprites[number];
+                }
+            }
+
+            remaining -= Time.deltaTime;
+
+            yield return null;
+        }
 
         onCooldown = false;
+
+        // Ready ikonica
+        if (cooldownImage != null &&
+            cooldownSprites.Length > 0)
+        {
+            cooldownImage.sprite =
+                cooldownSprites[0];
+        }
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 5;
+
+    public GameOverUI gameOverUI;
     public int currentHealth;
 
     public Image healthBarImage;
@@ -86,7 +88,20 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void Die()
-    {
-        Debug.Log("Player died!");
-    }
+{
+    PlayerMovement movement =
+        GetComponent<PlayerMovement>();
+
+    if (movement != null)
+        movement.SetDead();
+
+    Animator animator =
+        GetComponent<Animator>();
+
+    if (animator != null)
+        animator.SetTrigger("Die");
+
+    if (gameOverUI != null)
+        gameOverUI.ShowGameOver();
+}
 }

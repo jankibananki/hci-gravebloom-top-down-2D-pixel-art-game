@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     
     private bool movementLocked = false;
 
+    private bool isDead = false;
+
     public void SetMovementLocked(bool locked)
     {
         movementLocked = locked;
@@ -41,6 +43,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         movement = Vector2.zero;
+
+        if (isDead)
+        {
+            animator.SetBool("IsMoving", false);
+            return;
+        }
 
         if (movementLocked)
         {
@@ -89,6 +97,27 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+         if (isDead)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         rb.linearVelocity = movement * speed;
+    }
+
+    public void SetDead()
+    {
+        isDead = true;
+
+        movement = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
+
+        animator.SetBool("IsMoving", false);
+    }
+
+    public bool IsDead()
+    {
+        return isDead;
     }
 }

@@ -2,26 +2,42 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [Header("Health")]
     public int maxHealth = 15;
 
     private int currentHealth;
     private bool isDead = false;
 
     private Animator animator;
-    private EnemyAI enemyAI;
+    private EnemyAI rangedAI;
+    private MeleeEnemyAI meleeAI;
     private Rigidbody2D rb;
-    private Collider2D enemyCollider;
+
+    private Collider2D[] colliders;
 
     void Awake()
     {
         currentHealth = maxHealth;
 
-        animator = GetComponent<Animator>();
-        enemyAI = GetComponent<EnemyAI>();
-        rb = GetComponent<Rigidbody2D>();
-        enemyCollider = GetComponent<Collider2D>();
+        // Radi i ako Animator kasnije prebaciš na Visual child
+        animator = GetComponentInChildren<Animator>();
 
-        Debug.Log("Enemy starting HP: " + currentHealth);
+        // Ako je mage, naći će EnemyAI
+        rangedAI = GetComponent<EnemyAI>();
+
+        // Ako je knight, naći će MeleeEnemyAI
+        meleeAI = GetComponent<MeleeEnemyAI>();
+
+        rb = GetComponent<Rigidbody2D>();
+
+        // Uzmi sve collidere, uključujući eventualne child hitboxove
+        colliders = GetComponentsInChildren<Collider2D>();
+
+        Debug.Log(
+            gameObject.name +
+            " starting HP: " +
+            currentHealth
+        );
     }
 
     public void TakeDamage(int damage)
@@ -31,9 +47,19 @@ public class EnemyHealth : MonoBehaviour
 
         currentHealth -= damage;
 
+        currentHealth =
+            Mathf.Clamp(
+                currentHealth,
+                0,
+                maxHealth
+            );
+
         Debug.Log(
-            "Enemy took " + damage +
-            " damage. HP: " + currentHealth
+            gameObject.name +
+            " took " +
+            damage +
+            " damage. HP: " +
+            currentHealth
         );
 
         if (currentHealth <= 0)
@@ -49,27 +75,59 @@ public class EnemyHealth : MonoBehaviour
 
         isDead = true;
 
-        Debug.Log("ENEMY DIED!");
+        Debug.Log(
+            gameObject.name +
+            " DIED!"
+        );
 
-        if (enemyAI != null)
-            enemyAI.SetDead();
+        // Ako je ranged mage
+        if (rangedAI != null)
+        {
+            rangedAI.SetDead();
+        }
 
+        // Ako je melee knight
+        if (meleeAI != null)
+        {
+            meleeAI.SetDead();
+        }
+
+        // Zaustavi ga
         if (rb != null)
-            rb.linearVelocity = Vector2.zero;
+        {
+            rb.linearVelocity =
+                Vector2.zero;
+        }
 
-        if (enemyCollider != null)
-            enemyCollider.enabled = false;
+        // Ugasi sve collidere
+        // da mrtav enemy više ne blokira / prima hitove
+        foreach (Collider2D col in colliders)
+        {
+            if (col != null)
+                col.enabled = false;
+        }
 
+        // Death animacija
         if (animator != null)
         {
-            animator.ResetTrigger("Cast");
-            animator.SetBool("IsMoving", false);
-            animator.SetTrigger("Die");
+            animator.SetBool(
+                "IsMoving",
+                false
+            );
+
+            animator.SetTrigger(
+                "Die"
+            );
         }
     }
 
     public bool IsDead()
     {
         return isDead;
+    }
+
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
     }
 }

@@ -75,11 +75,18 @@ public class WaveManager : MonoBehaviour
             );
 
         EnemyHealth health =
-            enemy.GetComponent<EnemyHealth>();
+            enemy.GetComponentInChildren<EnemyHealth>();
 
         if (health != null)
         {
             health.SetWaveManager(this);
+        }
+        else
+        {
+            Debug.LogError(
+                "SPAWNED ENEMY HAS NO EnemyHealth: " +
+                enemy.name
+            );
         }
 
         spawnedEnemies++;

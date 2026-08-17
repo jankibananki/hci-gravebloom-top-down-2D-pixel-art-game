@@ -60,12 +60,12 @@ public class MeleeEnemyAI : MonoBehaviour
                 player.position
             );
 
-        // Predaleko je player
-        if (distance > detectionRange)
-        {
-            StopMoving();
-            return;
-        }
+        // // Predaleko je player
+        // if (distance > detectionRange)
+        // {
+        //     StopMoving();
+        //     return;
+        // }
 
         Vector2 directionToPlayer =
             ((Vector2)player.position -

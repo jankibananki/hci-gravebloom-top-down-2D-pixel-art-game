@@ -4,7 +4,7 @@ public class EnemyHealth : MonoBehaviour
 {
     [Header("Health")]
     public int maxHealth = 15;
-
+    private WaveManager waveManager;
     private int currentHealth;
     private bool isDead = false;
 
@@ -15,6 +15,10 @@ public class EnemyHealth : MonoBehaviour
 
     private Collider2D[] colliders;
 
+    public void SetWaveManager(WaveManager manager)
+    {
+        waveManager = manager;
+    }
     void Awake()
     {
         currentHealth = maxHealth;
@@ -74,6 +78,11 @@ public class EnemyHealth : MonoBehaviour
             return;
 
         isDead = true;
+
+        if (waveManager != null)
+        {
+            waveManager.EnemyKilled();
+        }
 
         Debug.Log(
             gameObject.name +

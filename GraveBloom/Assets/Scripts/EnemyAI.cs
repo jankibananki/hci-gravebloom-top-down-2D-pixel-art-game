@@ -72,13 +72,13 @@ public class EnemyAI : MonoBehaviour
                 player.position
             );
 
-        // Player je predaleko
-        if (distance > detectionRange)
-        {
-            moveDirection = Vector2.zero;
-            animator.SetBool("IsMoving", false);
-            return;
-        }
+        // // Player je predaleko
+        // if (distance > detectionRange)
+        // {
+        //     moveDirection = Vector2.zero;
+        //     animator.SetBool("IsMoving", false);
+        //     return;
+        // }
 
         Vector2 directionToPlayer =
             ((Vector2)player.position -

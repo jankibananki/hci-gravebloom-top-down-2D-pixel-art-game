@@ -169,5 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63e4589b1a534e4d8cbda4748efe350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MagicProjectile
-  speed: 8
+  speed: 5
   lifetime: 2
+  maxRange: 8
+  damage: 2
+  hitPenetration: 0.3
+  fadeStartPercent: 0.85

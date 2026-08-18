@@ -29,6 +29,12 @@ public class WaveManager : MonoBehaviour
 
     private Camera mainCamera;
 
+    [Header("Level Exit")]
+    public GameObject exitPointPrefab;
+    public Transform exitSpawnPoint;
+
+    public ExitIndicator exitIndicator;
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -166,10 +172,22 @@ public class WaveManager : MonoBehaviour
     {
         Debug.Log("LEVEL COMPLETE!");
 
-        // OVDE POSLE:
-        // otvori kapiju
-        // prikaži Level Complete UI
-        // aktiviraj portal
-        // prebaci na sledeći nivo
+        if (exitPointPrefab == null ||
+            exitSpawnPoint == null)
+            return;
+
+        GameObject exitPoint =
+            Instantiate(
+                exitPointPrefab,
+                exitSpawnPoint.position,
+                Quaternion.identity
+            );
+
+        if (exitIndicator != null)
+        {
+            exitIndicator.SetTarget(
+                exitPoint.transform
+            );
+        }
     }
 }

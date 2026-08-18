@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436eec8a46f81eb4c806533d89816183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UltimateBeamDamage
-  damage: 5
+  damage: 15
 --- !u!50 &3864839820928691989
 Rigidbody2D:
   serializedVersion: 5

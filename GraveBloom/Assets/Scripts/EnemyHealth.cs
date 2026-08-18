@@ -13,6 +13,12 @@ public class EnemyHealth : MonoBehaviour
     private MeleeEnemyAI meleeAI;
     private Rigidbody2D rb;
 
+    [Header("Drops")]
+    public GameObject healthPotionPrefab;
+
+    [Range(0f, 1f)]
+    public float healthPotionDropChance = 0.25f;
+
     private Collider2D[] colliders;
 
     public void SetWaveManager(WaveManager manager)
@@ -116,6 +122,8 @@ public class EnemyHealth : MonoBehaviour
                 col.enabled = false;
         }
 
+        TryDropHealthPotion();
+
         // Death animacija
         if (animator != null)
         {
@@ -138,5 +146,22 @@ public class EnemyHealth : MonoBehaviour
     public int GetCurrentHealth()
     {
         return currentHealth;
+    }
+
+    void TryDropHealthPotion()
+    {
+        if (healthPotionPrefab == null)
+            return;
+
+        float roll = Random.value;
+
+        if (roll <= healthPotionDropChance)
+        {
+            Instantiate(
+                healthPotionPrefab,
+                transform.position,
+                Quaternion.identity
+            );
+        }
     }
 }

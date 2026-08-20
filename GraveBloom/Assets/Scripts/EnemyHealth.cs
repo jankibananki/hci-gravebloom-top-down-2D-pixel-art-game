@@ -11,7 +11,18 @@ public class EnemyHealth : MonoBehaviour
     private Animator animator;
     private EnemyAI rangedAI;
     private MeleeEnemyAI meleeAI;
+    private BossAI bossAI;
     private Rigidbody2D rb;
+
+    public int CurrentHealth
+    {
+        get { return currentHealth; }
+    }
+
+public int MaxHealth
+{
+    get { return maxHealth; }
+}
 
     [Header("Drops")]
     public GameObject healthPotionPrefab;
@@ -37,6 +48,8 @@ public class EnemyHealth : MonoBehaviour
 
         // Ako je knight, naći će MeleeEnemyAI
         meleeAI = GetComponent<MeleeEnemyAI>();
+        //ako je boss nalazi BossAI
+        bossAI = GetComponent<BossAI>();
 
         rb = GetComponent<Rigidbody2D>();
 
@@ -105,6 +118,12 @@ public class EnemyHealth : MonoBehaviour
         if (meleeAI != null)
         {
             meleeAI.SetDead();
+        }
+
+        //ako je boss
+        if (bossAI != null)
+        {
+            bossAI.SetDead();
         }
 
         // Zaustavi ga

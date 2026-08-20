@@ -31,6 +31,14 @@ public class WaveManager : MonoBehaviour
     private int killedEnemies = 0;
     private int aliveEnemies = 0;
 
+    [Header("Final Level")]
+    public bool isFinalLevel = false;
+    public GameCompleteUI gameCompleteUI;
+    public EnemyHealth bossHealth;
+    public float gameCompleteDelay = 1.2f;
+
+    private bool gameCompleteStarted = false;
+
     private Camera mainCamera;
     private GameObject spawnedExitPoint;
 
@@ -173,7 +181,24 @@ public class WaveManager : MonoBehaviour
     {
         Debug.Log("LEVEL COMPLETE!");
 
-        // Sprečava da se exit napravi više puta
+        // Ako je poslednji level - prikaži završni ekran
+        if (isFinalLevel)
+        {
+            if (gameCompleteUI != null)
+            {
+                gameCompleteUI.Show();
+            }
+            else
+            {
+                Debug.LogError(
+                    "Final level nema povezan GameCompleteUI!"
+                );
+            }
+
+            return;
+        }
+
+        // Obični leveli spawn-uju exit
         if (spawnedExitPoint != null)
             return;
 
@@ -194,7 +219,6 @@ public class WaveManager : MonoBehaviour
                 Quaternion.identity
             );
 
-        // Exit-u kažemo koja scena je sledeća
         LevelExitPoint exit =
             spawnedExitPoint.GetComponent<LevelExitPoint>();
 
@@ -202,18 +226,49 @@ public class WaveManager : MonoBehaviour
         {
             exit.nextSceneName = nextSceneName;
         }
-        else
-        {
-            Debug.LogError(
-                "LevelExitPoint prefab nema LevelExitPoint.cs!"
-            );
-        }
 
         if (exitIndicator != null)
         {
             exitIndicator.SetTarget(
                 spawnedExitPoint.transform
             );
+        }
+    }
+    void Update()
+    {
+        if (isFinalLevel && !gameCompleteStarted)
+        {
+            CheckFinalLevelComplete();
+        }
+    }
+
+    void CheckFinalLevelComplete()
+    {
+        if (bossHealth == null)
+            return;
+
+        bool waveDead = killedEnemies >= totalEnemies;
+        bool bossDead = bossHealth.IsDead();
+
+        if (waveDead && bossDead)
+        {
+            gameCompleteStarted = true;
+            StartCoroutine(ShowGameComplete());
+        }
+    }
+
+    IEnumerator ShowGameComplete()
+    {
+        // malo sačekamo da se vidi boss death animacija
+        yield return new WaitForSeconds(gameCompleteDelay);
+
+        if (gameCompleteUI != null)
+        {
+            gameCompleteUI.Show();
+        }
+        else
+        {
+            Debug.LogError("Game Complete UI nije povezan!");
         }
     }
 }

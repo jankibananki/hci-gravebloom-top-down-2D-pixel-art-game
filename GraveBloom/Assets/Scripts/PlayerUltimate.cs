@@ -28,11 +28,14 @@ public class PlayerUltimate : MonoBehaviour
 
     private PlayerMovement movement;
 
+    private PlayerSFX playerSFX;
+
     void Awake()
     {
         aim = GetComponent<PlayerAim>();
         movement = GetComponent<PlayerMovement>();
         playerAnimator = GetComponent<Animator>();
+        playerSFX = GetComponent<PlayerSFX>();
     }
 
     void Start()
@@ -46,6 +49,9 @@ public class PlayerUltimate : MonoBehaviour
 
     void Update()
     {
+        if (PauseMenu.IsPaused)
+            return;
+
         if (Keyboard.current == null)
             return;
 
@@ -109,6 +115,8 @@ public class PlayerUltimate : MonoBehaviour
                 0f
             );
         }
+
+        playerSFX?.PlayUltimate();
 
         yield return new WaitForSeconds(
             beamDuration

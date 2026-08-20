@@ -28,6 +28,8 @@ public class PlayerShield : MonoBehaviour
 
     private Coroutine shieldTimer;
 
+    private PlayerSFX playerSFX;
+
     void Start()
     {
         shieldAnimator = shieldObject.GetComponent<Animator>();
@@ -38,6 +40,8 @@ public class PlayerShield : MonoBehaviour
         {
             cooldownImage.sprite = cooldownSprites[0];
         }
+
+        playerSFX = GetComponent<PlayerSFX>();
     }
 
     void Update()
@@ -61,6 +65,8 @@ public class PlayerShield : MonoBehaviour
             return;
 
         shieldActive = true;
+
+        playerSFX?.PlayShield();
 
         shieldObject.SetActive(true);
 

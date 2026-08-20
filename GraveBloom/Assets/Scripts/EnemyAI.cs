@@ -10,7 +10,6 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Obstacle Avoidance")]
     public LayerMask obstacleLayer;
-
     public float obstacleCheckDistance = 1.2f;
     public float obstacleCheckRadius = 0.3f;
 
@@ -23,6 +22,7 @@ public class EnemyAI : MonoBehaviour
     private Transform player;
     private Rigidbody2D rb;
     private Animator animator;
+    private EnemySFX enemySFX;
 
     private Vector2 moveDirection;
     private Vector2 lastDirection = Vector2.down;
@@ -35,6 +35,9 @@ public class EnemyAI : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        // Zvuk skeletona
+        enemySFX = GetComponent<EnemySFX>();
     }
 
     void Start()
@@ -72,14 +75,6 @@ public class EnemyAI : MonoBehaviour
                 player.position
             );
 
-        // // Player je predaleko
-        // if (distance > detectionRange)
-        // {
-        //     moveDirection = Vector2.zero;
-        //     animator.SetBool("IsMoving", false);
-        //     return;
-        // }
-
         Vector2 directionToPlayer =
             ((Vector2)player.position -
              (Vector2)transform.position).normalized;
@@ -89,20 +84,26 @@ public class EnemyAI : MonoBehaviour
         {
             moveDirection = Vector2.zero;
 
-            animator.SetBool("IsMoving", false);
+            animator.SetBool(
+                "IsMoving",
+                false
+            );
 
             FaceDirection(directionToPlayer);
 
             if (!attackOnCooldown)
-                StartCoroutine(Cast(directionToPlayer));
+                StartCoroutine(
+                    Cast(directionToPlayer)
+                );
 
             return;
         }
 
-        // Player je primećen:
-        // idi prema njemu, ali izbegavaj prepreke
+        // Idi prema playeru i izbegavaj prepreke
         moveDirection =
-            GetObstacleAvoidanceDirection(directionToPlayer);
+            GetObstacleAvoidanceDirection(
+                directionToPlayer
+            );
 
         animator.SetBool(
             "IsMoving",
@@ -125,9 +126,9 @@ public class EnemyAI : MonoBehaviour
     }
 
     Vector2 GetObstacleAvoidanceDirection(
-        Vector2 desiredDirection)
+        Vector2 desiredDirection
+    )
     {
-        // Proveri da li nešto blokira direktan put
         RaycastHit2D frontHit =
             Physics2D.CircleCast(
                 transform.position,
@@ -137,11 +138,10 @@ public class EnemyAI : MonoBehaviour
                 obstacleLayer
             );
 
-        // Nema prepreke → pravo ka playeru
+        // Nema prepreke
         if (!frontHit)
             return desiredDirection;
 
-        // Pravci 90° levo/desno od trenutnog pravca
         Vector2 leftDirection =
             new Vector2(
                 -desiredDirection.y,
@@ -167,8 +167,6 @@ public class EnemyAI : MonoBehaviour
         else
             avoidanceDirection = rightDirection;
 
-        // Ne ide potpuno bočno,
-        // nego pokušava i dalje malo prema playeru
         Vector2 combinedDirection =
             desiredDirection * 0.35f +
             avoidanceDirection * 0.65f;
@@ -225,8 +223,15 @@ public class EnemyAI : MonoBehaviour
 
     void SetDirection(Vector2 direction)
     {
-        animator.SetFloat("MoveX", direction.x);
-        animator.SetFloat("MoveY", direction.y);
+        animator.SetFloat(
+            "MoveX",
+            direction.x
+        );
+
+        animator.SetFloat(
+            "MoveY",
+            direction.y
+        );
     }
 
     IEnumerator Cast(Vector2 direction)
@@ -234,7 +239,8 @@ public class EnemyAI : MonoBehaviour
         isCasting = true;
         attackOnCooldown = true;
 
-        rb.linearVelocity = Vector2.zero;
+        rb.linearVelocity =
+            Vector2.zero;
 
         Vector2 cardinal;
 
@@ -256,12 +262,21 @@ public class EnemyAI : MonoBehaviour
                 );
         }
 
-        animator.SetFloat("AimX", cardinal.x);
-        animator.SetFloat("AimY", cardinal.y);
+        animator.SetFloat(
+            "AimX",
+            cardinal.x
+        );
+
+        animator.SetFloat(
+            "AimY",
+            cardinal.y
+        );
 
         animator.SetTrigger("Cast");
 
-        yield return new WaitForSeconds(castDelay);
+        yield return new WaitForSeconds(
+            castDelay
+        );
 
         // Ako je umro dok castuje
         if (isDead)
@@ -282,7 +297,15 @@ public class EnemyAI : MonoBehaviour
             projectile.GetComponent<EnemyProjectile>();
 
         if (enemyProjectile != null)
+        {
             enemyProjectile.Shoot(direction);
+        }
+
+        // 🔊 ATTACK SOUND
+        if (enemySFX != null)
+        {
+            enemySFX.PlayAttack();
+        }
 
         isCasting = false;
 
@@ -302,10 +325,17 @@ public class EnemyAI : MonoBehaviour
 
         StopAllCoroutines();
 
-        moveDirection = Vector2.zero;
-        rb.linearVelocity = Vector2.zero;
+        moveDirection =
+            Vector2.zero;
 
-        animator.SetBool("IsMoving", false);
+        rb.linearVelocity =
+            Vector2.zero;
+
+        animator.SetBool(
+            "IsMoving",
+            false
+        );
+
         animator.ResetTrigger("Cast");
     }
 }

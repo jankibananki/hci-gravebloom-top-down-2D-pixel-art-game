@@ -8,7 +8,7 @@ public class EnemyProjectile : MonoBehaviour
 
     public float maxRange = 6f;
 
-private Vector2 startPosition;
+    private Vector2 startPosition;
 
     private Rigidbody2D rb;
 

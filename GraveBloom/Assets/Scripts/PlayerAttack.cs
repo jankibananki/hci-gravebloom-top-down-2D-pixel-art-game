@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
+
+    private PlayerSFX playerSFX;
     public GameObject projectilePrefab;
     public float spawnDistance = 0.6f;
 
@@ -13,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
     {
         aim = GetComponent<PlayerAim>();
         animator = GetComponent<Animator>();
+        playerSFX = GetComponent<PlayerSFX>();
     }
 
     void Update()
@@ -55,5 +58,7 @@ public class PlayerAttack : MonoBehaviour
         projectile
             .GetComponent<MagicProjectile>()
             .Shoot(direction);
+
+        playerSFX?.PlayBasicAttack();
     }
 }

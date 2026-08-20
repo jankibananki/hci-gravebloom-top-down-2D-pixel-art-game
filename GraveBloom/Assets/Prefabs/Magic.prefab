@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 135071977411754329}
   - component: {fileID: 4712937596188167174}
   - component: {fileID: 8842832928365549005}
+  - component: {fileID: 8447018072325306532}
   m_Layer: 0
   m_Name: Magic
   m_TagString: Untagged
@@ -175,3 +176,18 @@ MonoBehaviour:
   damage: 2
   hitPenetration: 0.3
   fadeStartPercent: 0.85
+--- !u!114 &8447018072325306532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812679222218804637}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e530fad381a04147a947006a1853761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySFX
+  audioSource: {fileID: 0}
+  attackSound: {fileID: 0}
+  deathSound: {fileID: 0}

@@ -12,16 +12,24 @@ public class PauseMenu : MonoBehaviour
     private bool isPaused = false;
 
     public static bool IsPaused { get; private set; }
-
+    private const string LastLevelKey = "LastLevel";
     void Start()
     {
         IsPaused = false;
-        
+
         darkOverlay.SetActive(false);
         pausePanel.SetActive(false);
         settingsPanel.SetActive(false);
 
         Time.timeScale = 1f;
+
+        // Zapamti gameplay level na kom se trenutno nalazimo
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        PlayerPrefs.SetString(LastLevelKey, currentScene);
+        PlayerPrefs.Save();
+
+        Debug.Log("SAVED LEVEL: " + currentScene);
     }
 
     void Update()

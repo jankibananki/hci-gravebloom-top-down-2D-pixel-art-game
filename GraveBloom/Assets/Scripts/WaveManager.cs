@@ -8,12 +8,8 @@ public class WaveManager : MonoBehaviour
 {
     [Header("Enemies")]
     public GameObject[] enemyPrefabs;
-
     public int totalEnemies = 15;
-
-    // Koliko maksimalno može da bude živo odjednom
     public int maxAliveEnemies = 5;
-
     public float spawnInterval = 2f;
 
     [Header("Spawn Points")]
@@ -23,24 +19,26 @@ public class WaveManager : MonoBehaviour
     public Image progressFill;
     public TMP_Text progressText;
 
+    [Header("Level Exit")]
+    public GameObject exitPointPrefab;
+    public Transform exitSpawnPoint;
+    public ExitIndicator exitIndicator;
+
+    [Header("Next Level")]
+    public string nextSceneName;
+
     private int spawnedEnemies = 0;
     private int killedEnemies = 0;
     private int aliveEnemies = 0;
 
     private Camera mainCamera;
-
-    [Header("Level Exit")]
-    public GameObject exitPointPrefab;
-    public Transform exitSpawnPoint;
-
-    public ExitIndicator exitIndicator;
+    private GameObject spawnedExitPoint;
 
     void Start()
     {
         mainCamera = Camera.main;
 
         UpdateProgress();
-
         StartCoroutine(SpawnWave());
     }
 
@@ -64,10 +62,9 @@ public class WaveManager : MonoBehaviour
         if (spawnPoint == null)
             return;
 
-        if (enemyPrefabs.Length == 0)
+        if (enemyPrefabs == null || enemyPrefabs.Length == 0)
             return;
 
-        // Random enemy tip
         GameObject prefab =
             enemyPrefabs[
                 Random.Range(0, enemyPrefabs.Length)
@@ -106,6 +103,9 @@ public class WaveManager : MonoBehaviour
 
         foreach (Transform point in spawnPoints)
         {
+            if (point == null)
+                continue;
+
             Vector3 viewportPosition =
                 mainCamera.WorldToViewportPoint(
                     point.position
@@ -118,8 +118,6 @@ public class WaveManager : MonoBehaviour
                 viewportPosition.y > 0 &&
                 viewportPosition.y < 1;
 
-            // Uzimamo samo pointove
-            // koje kamera trenutno NE vidi
             if (!visible)
             {
                 availablePoints.Add(point);
@@ -141,6 +139,9 @@ public class WaveManager : MonoBehaviour
     {
         killedEnemies++;
         aliveEnemies--;
+
+        if (aliveEnemies < 0)
+            aliveEnemies = 0;
 
         UpdateProgress();
 
@@ -172,21 +173,46 @@ public class WaveManager : MonoBehaviour
     {
         Debug.Log("LEVEL COMPLETE!");
 
-        if (exitPointPrefab == null ||
-            exitSpawnPoint == null)
+        // Sprečava da se exit napravi više puta
+        if (spawnedExitPoint != null)
             return;
 
-        GameObject exitPoint =
+        if (exitPointPrefab == null ||
+            exitSpawnPoint == null)
+        {
+            Debug.LogError(
+                "Exit Point Prefab ili Exit Spawn Point nisu povezani!"
+            );
+
+            return;
+        }
+
+        spawnedExitPoint =
             Instantiate(
                 exitPointPrefab,
                 exitSpawnPoint.position,
                 Quaternion.identity
             );
 
+        // Exit-u kažemo koja scena je sledeća
+        LevelExitPoint exit =
+            spawnedExitPoint.GetComponent<LevelExitPoint>();
+
+        if (exit != null)
+        {
+            exit.nextSceneName = nextSceneName;
+        }
+        else
+        {
+            Debug.LogError(
+                "LevelExitPoint prefab nema LevelExitPoint.cs!"
+            );
+        }
+
         if (exitIndicator != null)
         {
             exitIndicator.SetTarget(
-                exitPoint.transform
+                spawnedExitPoint.transform
             );
         }
     }

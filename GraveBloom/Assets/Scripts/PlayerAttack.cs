@@ -17,6 +17,9 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
+        if (PauseMenu.IsPaused)
+            return;
+
         if (Mouse.current == null)
             return;
 

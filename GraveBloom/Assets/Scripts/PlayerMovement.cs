@@ -44,6 +44,12 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = Vector2.zero;
 
+        if (PauseMenu.IsPaused)
+        {
+            animator.SetBool("IsMoving", false);
+            return;
+        }
+
         if (isDead)
         {
             animator.SetBool("IsMoving", false);

@@ -27,28 +27,49 @@ public class WaveManager : MonoBehaviour
     [Header("Next Level")]
     public string nextSceneName;
 
+    [Header("Final Level")]
+    public bool isFinalLevel = false;
+    public GameCompleteUI gameCompleteUI;
+    public GameObject bossObject;
+    public EnemyHealth bossHealth;
+    public float gameCompleteDelay = 1.2f;
+
     private int spawnedEnemies = 0;
     private int killedEnemies = 0;
     private int aliveEnemies = 0;
 
-    [Header("Final Level")]
-    public bool isFinalLevel = false;
-    public GameCompleteUI gameCompleteUI;
-    public EnemyHealth bossHealth;
-    public float gameCompleteDelay = 1.2f;
-
+    private bool bossActivated = false;
     private bool gameCompleteStarted = false;
 
     private Camera mainCamera;
     private GameObject spawnedExitPoint;
+
 
     void Start()
     {
         mainCamera = Camera.main;
 
         UpdateProgress();
+
+        // Na poslednjem levelu boss je skriven
+        // dok se ne očisti ceo wave.
+        if (isFinalLevel && bossObject != null)
+        {
+            bossObject.SetActive(false);
+        }
+
         StartCoroutine(SpawnWave());
     }
+
+
+    void Update()
+    {
+        if (isFinalLevel && !gameCompleteStarted)
+        {
+            CheckFinalLevelComplete();
+        }
+    }
+
 
     IEnumerator SpawnWave()
     {
@@ -62,6 +83,7 @@ public class WaveManager : MonoBehaviour
             yield return new WaitForSeconds(spawnInterval);
         }
     }
+
 
     void SpawnEnemy()
     {
@@ -104,6 +126,7 @@ public class WaveManager : MonoBehaviour
         aliveEnemies++;
     }
 
+
     Transform GetOffscreenSpawnPoint()
     {
         List<Transform> availablePoints =
@@ -143,6 +166,7 @@ public class WaveManager : MonoBehaviour
         ];
     }
 
+
     public void EnemyKilled()
     {
         killedEnemies++;
@@ -153,26 +177,29 @@ public class WaveManager : MonoBehaviour
 
         UpdateProgress();
 
-        // Level 1 i Level 2
+        // LEVEL 1 I LEVEL 2
+        // Kad se wave očisti, pojavljuje se exit.
         if (!isFinalLevel && killedEnemies >= totalEnemies)
         {
             LevelComplete();
+            return;
         }
 
-        // Level 3 NE završavamo samo zbog wave-a
-        if (isFinalLevel)
+        // LEVEL 3
+        // Kad se wave očisti, pojavljuje se boss.
+        if (isFinalLevel && killedEnemies >= totalEnemies)
         {
-            CheckFinalLevelComplete();
+            ActivateBoss();
         }
     }
+
 
     void UpdateProgress()
     {
         if (progressFill != null)
         {
             progressFill.fillAmount =
-                (float)killedEnemies /
-                totalEnemies;
+                (float)killedEnemies / totalEnemies;
         }
 
         if (progressText != null)
@@ -184,28 +211,86 @@ public class WaveManager : MonoBehaviour
         }
     }
 
+
+    void ActivateBoss()
+    {
+        if (bossActivated)
+            return;
+
+        bossActivated = true;
+
+        if (bossObject != null)
+        {
+            bossObject.SetActive(true);
+
+            Debug.Log("BOSS ACTIVATED!");
+        }
+        else
+        {
+            Debug.LogError(
+                "Boss Object nije povezan na WaveManager!"
+            );
+        }
+    }
+
+
+    void CheckFinalLevelComplete()
+    {
+        if (gameCompleteStarted)
+            return;
+
+        if (!bossActivated)
+            return;
+
+        if (bossHealth == null)
+            return;
+
+        bool waveComplete =
+            killedEnemies >= totalEnemies;
+
+        bool bossDead =
+            bossHealth.IsDead();
+
+        // I WAVE I BOSS MORAJU BITI MRTVI
+        if (waveComplete && bossDead)
+        {
+            gameCompleteStarted = true;
+
+            Debug.Log(
+                "WAVE + BOSS DEAD -> GAME COMPLETE"
+            );
+
+            StartCoroutine(
+                ShowGameComplete()
+            );
+        }
+    }
+
+
+    IEnumerator ShowGameComplete()
+    {
+        // Sačekamo da se vidi boss death animacija
+        yield return new WaitForSeconds(
+            gameCompleteDelay
+        );
+
+        if (gameCompleteUI != null)
+        {
+            gameCompleteUI.Show();
+        }
+        else
+        {
+            Debug.LogError(
+                "Game Complete UI nije povezan!"
+            );
+        }
+    }
+
+
     void LevelComplete()
     {
         Debug.Log("LEVEL COMPLETE!");
 
-        // Ako je poslednji level - prikaži završni ekran
-        if (isFinalLevel)
-        {
-            if (gameCompleteUI != null)
-            {
-                gameCompleteUI.Show();
-            }
-            else
-            {
-                Debug.LogError(
-                    "Final level nema povezan GameCompleteUI!"
-                );
-            }
-
-            return;
-        }
-
-        // Obični leveli spawn-uju exit
         if (spawnedExitPoint != null)
             return;
 
@@ -231,7 +316,14 @@ public class WaveManager : MonoBehaviour
 
         if (exit != null)
         {
-            exit.nextSceneName = nextSceneName;
+            exit.nextSceneName =
+                nextSceneName;
+        }
+        else
+        {
+            Debug.LogError(
+                "LevelExitPoint prefab nema LevelExitPoint.cs!"
+            );
         }
 
         if (exitIndicator != null)
@@ -239,52 +331,6 @@ public class WaveManager : MonoBehaviour
             exitIndicator.SetTarget(
                 spawnedExitPoint.transform
             );
-        }
-    }
-    void Update()
-    {
-        if (isFinalLevel && !gameCompleteStarted)
-        {
-            CheckFinalLevelComplete();
-        }
-    }
-
-    void CheckFinalLevelComplete()
-    {
-        if (gameCompleteStarted)
-            return;
-
-        if (bossHealth == null)
-            return;
-
-        bool waveComplete =
-            killedEnemies >= totalEnemies;
-
-        bool bossDead =
-            bossHealth.IsDead();
-
-        if (waveComplete && bossDead)
-        {
-            gameCompleteStarted = true;
-
-            Debug.Log("WAVE + BOSS DEAD -> GAME COMPLETE");
-
-            StartCoroutine(ShowGameComplete());
-        }
-    }
-
-    IEnumerator ShowGameComplete()
-    {
-        // malo sačekamo da se vidi boss death animacija
-        yield return new WaitForSeconds(gameCompleteDelay);
-
-        if (gameCompleteUI != null)
-        {
-            gameCompleteUI.Show();
-        }
-        else
-        {
-            Debug.LogError("Game Complete UI nije povezan!");
         }
     }
 }

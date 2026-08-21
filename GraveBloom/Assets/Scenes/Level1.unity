@@ -415,7 +415,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 4277195758294638150, guid: 54350ba2fda280241adba3b85992686f, type: 3}
   - {fileID: 1514780224820241421, guid: d5bdafb4768d4d24b9f478f14e2307c7, type: 3}
-  totalEnemies: 2
+  totalEnemies: 25
   maxAliveEnemies: 7
   spawnInterval: 2
   spawnPoints:

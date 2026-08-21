@@ -698,7 +698,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 4277195758294638150, guid: 54350ba2fda280241adba3b85992686f, type: 3}
   - {fileID: 1514780224820241421, guid: d5bdafb4768d4d24b9f478f14e2307c7, type: 3}
-  totalEnemies: 2
+  totalEnemies: 50
   maxAliveEnemies: 10
   spawnInterval: 1
   spawnPoints:
@@ -720,6 +720,7 @@ MonoBehaviour:
   nextSceneName: 
   isFinalLevel: 1
   gameCompleteUI: {fileID: 42689496}
+  bossObject: {fileID: 1255217975}
   bossHealth: {fileID: 1255217980}
   gameCompleteDelay: 1.2
 --- !u!4 &215893328
@@ -6060,7 +6061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1255217976
 SpriteRenderer:
   serializedVersion: 2
@@ -6189,7 +6190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8945b77410ef0504a8b1997b1133cdb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 50
+  maxHealth: 150
   healthPotionPrefab: {fileID: 0}
   healthPotionDropChance: 0
 --- !u!70 &1255217981
@@ -6922,7 +6923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1044332743063988537, guid: e863f45ddd261a143b180052448a3128, type: 3}
+  m_Sprite: {fileID: 2266395591118621882, guid: daf88f48fc3f5534d803bb9ce291191a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

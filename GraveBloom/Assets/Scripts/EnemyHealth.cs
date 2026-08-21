@@ -13,16 +13,16 @@ public class EnemyHealth : MonoBehaviour
     private MeleeEnemyAI meleeAI;
     private BossAI bossAI;
     private Rigidbody2D rb;
-
+    private EnemySFX enemySFX;
     public int CurrentHealth
     {
         get { return currentHealth; }
     }
 
-public int MaxHealth
-{
-    get { return maxHealth; }
-}
+    public int MaxHealth
+    {
+        get { return maxHealth; }
+    }
 
     [Header("Drops")]
     public GameObject healthPotionPrefab;
@@ -52,6 +52,8 @@ public int MaxHealth
         bossAI = GetComponent<BossAI>();
 
         rb = GetComponent<Rigidbody2D>();
+
+        enemySFX = GetComponent<EnemySFX>();
 
         // Uzmi sve collidere, uključujući eventualne child hitboxove
         colliders = GetComponentsInChildren<Collider2D>();
@@ -97,6 +99,9 @@ public int MaxHealth
             return;
 
         isDead = true;
+
+        if (enemySFX != null)
+            enemySFX.PlayDeath();
 
         if (waveManager != null)
         {

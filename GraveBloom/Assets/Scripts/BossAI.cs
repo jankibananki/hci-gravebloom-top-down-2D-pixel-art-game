@@ -22,11 +22,13 @@ public class BossAI : MonoBehaviour
     private bool isAttacking = false;
     private bool attackOnCooldown = false;
     private bool isDead = false;
+    private EnemySFX enemySFX;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        enemySFX = GetComponent<EnemySFX>();
     }
 
     void Start()
@@ -159,6 +161,9 @@ public class BossAI : MonoBehaviour
         }
 
         animator.SetTrigger("Attack");
+
+        if (enemySFX != null)
+            enemySFX.PlayAttack();  
 
         // Pusti attack animaciju da završi
         yield return new WaitForSeconds(0.25f);

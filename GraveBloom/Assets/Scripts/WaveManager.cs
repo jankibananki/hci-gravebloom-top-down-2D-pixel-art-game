@@ -153,9 +153,16 @@ public class WaveManager : MonoBehaviour
 
         UpdateProgress();
 
-        if (killedEnemies >= totalEnemies)
+        // Level 1 i Level 2
+        if (!isFinalLevel && killedEnemies >= totalEnemies)
         {
             LevelComplete();
+        }
+
+        // Level 3 NE završavamo samo zbog wave-a
+        if (isFinalLevel)
+        {
+            CheckFinalLevelComplete();
         }
     }
 
@@ -244,15 +251,24 @@ public class WaveManager : MonoBehaviour
 
     void CheckFinalLevelComplete()
     {
+        if (gameCompleteStarted)
+            return;
+
         if (bossHealth == null)
             return;
 
-        bool waveDead = killedEnemies >= totalEnemies;
-        bool bossDead = bossHealth.IsDead();
+        bool waveComplete =
+            killedEnemies >= totalEnemies;
 
-        if (waveDead && bossDead)
+        bool bossDead =
+            bossHealth.IsDead();
+
+        if (waveComplete && bossDead)
         {
             gameCompleteStarted = true;
+
+            Debug.Log("WAVE + BOSS DEAD -> GAME COMPLETE");
+
             StartCoroutine(ShowGameComplete());
         }
     }

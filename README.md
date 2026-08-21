@@ -29,10 +29,6 @@
   </a>
 </p>
 
-<p align="center">
-  <b>▶ Watch the gameplay video</b>
-</p>
-
 ---
 
 ## About the Game
@@ -125,7 +121,7 @@ Survive the last enemy wave to summon the boss and defeat him to complete
 the game.
 
 <p align="center">
-  <img src="README/boss.png" width="500" />
+  <img src="README/boss.png" width="100" />
 </p>
 
 ---

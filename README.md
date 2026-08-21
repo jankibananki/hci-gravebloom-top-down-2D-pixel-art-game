@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="assets/GraveBloom-logo.png"
+    src="GraveBloom/Assets/Sprites/UI/GraveBloomLogo.png"
     alt="Gravebloom Logo"
     width="800"
   />

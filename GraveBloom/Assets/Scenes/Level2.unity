@@ -360,6 +360,7 @@ MonoBehaviour:
   nextSceneName: Level3
   isFinalLevel: 0
   gameCompleteUI: {fileID: 0}
+  bossObject: {fileID: 0}
   bossHealth: {fileID: 0}
   gameCompleteDelay: 1.2
 --- !u!4 &92603740
@@ -4910,8 +4911,8 @@ RectTransform:
   - {fileID: 2074413463}
   - {fileID: 1395381444}
   - {fileID: 196851909}
-  - {fileID: 1991913049}
   - {fileID: 1774266107}
+  - {fileID: 1991913049}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

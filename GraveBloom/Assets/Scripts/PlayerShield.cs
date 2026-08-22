@@ -72,10 +72,10 @@ public class PlayerShield : MonoBehaviour
 
         shieldAnimator.Play("shieldAppear", 0, 0f);
 
-        // Shield traje određeno vreme
+        // Shield traje odredjeno vreme
         shieldTimer = StartCoroutine(ShieldLifetime());
 
-        // COOLDOWN KREĆE ODMAH NAKON CASTA
+        // cd krece odmah nakon castovanja
         StartCoroutine(ShieldCooldown());
     }
 
@@ -116,7 +116,7 @@ public class PlayerShield : MonoBehaviour
 
         StartCoroutine(DisableShieldAfterBreak());
 
-        // OVO VIŠE NIJE OVDE:
+        // ovo vise nije tu:
         // StartCoroutine(ShieldCooldown());
     }
 

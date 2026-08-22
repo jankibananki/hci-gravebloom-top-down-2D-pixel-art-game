@@ -12,7 +12,7 @@ public class MeleeEnemyAI : MonoBehaviour
     public int damage = 1;
     public float attackCooldown = 1.5f;
 
-    // Koliko posle početka animacije stvarno udara
+    // Koliko posle pocetka animacije stvarno udara
     public float attackHitDelay = 0.35f;
 
     private Transform player;
@@ -157,7 +157,7 @@ public class MeleeEnemyAI : MonoBehaviour
 
         animator.SetTrigger("Attack");
 
-        // čekamo da mač dođe do dela animacije
+        // cekamo da mac dodje do dela animacije
         // gde stvarno udara
         yield return new WaitForSeconds(
             attackHitDelay

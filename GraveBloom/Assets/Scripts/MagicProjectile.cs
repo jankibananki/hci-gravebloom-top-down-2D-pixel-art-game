@@ -10,7 +10,7 @@ public class MagicProjectile : MonoBehaviour
     [Header("Damage")]
     public int damage = 1;
 
-    // Koliko projectile uđe u enemija
+    //koliko projektila udje u enemija
     // pre nego što nestane
     public float hitPenetration = 0.3f;
 
@@ -59,7 +59,7 @@ public class MagicProjectile : MonoBehaviour
 
     void Update()
     {
-        // Ako smo već dotakli enemija,
+        // ako smo vec dotakli enemija,
         // pusti projectile još malo unutra
         if (hasHitEnemy)
         {
@@ -128,7 +128,7 @@ public class MagicProjectile : MonoBehaviour
 
         hitStartPosition = transform.position;
 
-        // Da ne registruje još 37 collidera
+        // da ne registruje još 37 collidera
         // dok ulazi u skeletona
         if (projectileCollider != null)
             projectileCollider.enabled = false;

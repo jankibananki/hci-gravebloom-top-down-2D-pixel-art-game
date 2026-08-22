@@ -7,8 +7,8 @@ public class GameplayMusic : MonoBehaviour
 
     void Awake()
     {
-        // Ako gameplay muzika već postoji iz prethodnog levela,
-        // uništi ovu novu kopiju.
+        // ako gameplay muzika vec postoji iz prethodnog levela
+        // unisti ovu novu kopiju
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -24,8 +24,8 @@ public class GameplayMusic : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Kad se vratimo u Main Menu,
-        // gameplay muzika više nije potrebna.
+        //kad se vratimo u main menu,
+        // gameplay muzika vise nije potrebna meni ima svoju
         if (scene.name == "MainMenu")
         {
             Destroy(gameObject);

@@ -51,7 +51,7 @@ public class ExitIndicator : MonoBehaviour
             screenPosition.y > 0 &&
             screenPosition.y < Screen.height;
 
-        // Ako je point već na ekranu,
+        // ako je point vec na ekranu
         // ne treba nam UI strelica
         if (targetVisible)
         {
@@ -71,21 +71,21 @@ public class ExitIndicator : MonoBehaviour
             (Vector2)screenPosition -
             screenCenter;
 
-        // Ako je target iza kamere
+        //ako je target iza kamere
         if (screenPosition.z < 0)
             direction *= -1f;
 
         direction.Normalize();
 
-        // Rotacija strelice
+        // rotacija strelice
         float angle =
             Mathf.Atan2(
                 direction.y,
                 direction.x
             ) * Mathf.Rad2Deg;
 
-        // +/−90 zavisi kako ti je nacrtan PNG.
-        // Ovaj kod pretpostavlja da sprite pokazuje GORE.
+        // +/−90 zavisi kako ti je nacrtan PNG
+        // ovaj kod pretpostavlja da sprite pokazuje GORE.
         rectTransform.rotation =
             Quaternion.Euler(
                 0f,

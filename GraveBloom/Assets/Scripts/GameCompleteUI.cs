@@ -7,7 +7,7 @@ public class GameCompleteUI : MonoBehaviour
 
     public void Show()
     {
-        // Igra je završena - brišemo poslednji level
+        // igra je zavrsena brise se poslednji level
         PlayerPrefs.DeleteKey(LastLevelKey);
         PlayerPrefs.Save();
 

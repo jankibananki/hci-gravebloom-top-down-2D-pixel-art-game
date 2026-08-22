@@ -36,7 +36,7 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        // Zvuk skeletona
+        // zvuk skeletona
         enemySFX = GetComponent<EnemySFX>();
     }
 
@@ -79,7 +79,7 @@ public class EnemyAI : MonoBehaviour
             ((Vector2)player.position -
              (Vector2)transform.position).normalized;
 
-        // Player je u attack range-u
+        // player je u attack range-u
         if (distance <= attackRange)
         {
             moveDirection = Vector2.zero;
@@ -99,7 +99,7 @@ public class EnemyAI : MonoBehaviour
             return;
         }
 
-        // Idi prema playeru i izbegavaj prepreke
+        // idi prema playeru i izbegavaj prepreke
         moveDirection =
             GetObstacleAvoidanceDirection(
                 directionToPlayer
@@ -138,7 +138,7 @@ public class EnemyAI : MonoBehaviour
                 obstacleLayer
             );
 
-        // Nema prepreke
+        // nema prepreke
         if (!frontHit)
             return desiredDirection;
 
@@ -278,7 +278,7 @@ public class EnemyAI : MonoBehaviour
             castDelay
         );
 
-        // Ako je umro dok castuje
+        // ako je umro dok castuje
         if (isDead)
             yield break;
 
@@ -301,7 +301,7 @@ public class EnemyAI : MonoBehaviour
             enemyProjectile.Shoot(direction);
         }
 
-        // 🔊 ATTACK SOUND
+        // ATTACK SOUND
         if (enemySFX != null)
         {
             enemySFX.PlayAttack();

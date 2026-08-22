@@ -24,7 +24,7 @@ public class CameraFollow : MonoBehaviour
             transform.position.z
         );
 
-        // Koliko kamera vidi od centra do ivice ekrana
+        // koliko kamera vidi od centra do ivice ekrana
         float halfHeight = cam.orthographicSize;
         float halfWidth = halfHeight * cam.aspect;
 
@@ -36,7 +36,7 @@ public class CameraFollow : MonoBehaviour
         float minY = bounds.min.y + halfHeight;
         float maxY = bounds.max.y - halfHeight;
 
-        // Sprečava problem ako je mapa manja od kamere
+        // sprecava problem ako je mapa manja od kamere
         float clampedX = minX > maxX
             ? bounds.center.x
             : Mathf.Clamp(targetPosition.x, minX, maxX);

@@ -79,7 +79,7 @@ public class BossAI : MonoBehaviour
             return;
         }
 
-        // Inače odmah juri playera
+        // inace odmah juri playera
         moveDirection = directionToPlayer;
 
         animator.SetBool("IsMoving", true);
@@ -149,7 +149,7 @@ public class BossAI : MonoBehaviour
 
         StopMoving();
 
-        // Ponovo se okrene ka playeru
+        // ponovo se okrene ka playeru
         // neposredno pre napada
         if (player != null)
         {
@@ -165,7 +165,7 @@ public class BossAI : MonoBehaviour
         if (enemySFX != null)
             enemySFX.PlayAttack();  
 
-        // Pusti attack animaciju da završi
+        // pusti attack animaciju da zavrsi
         yield return new WaitForSeconds(0.25f);
 
         isAttacking = false;

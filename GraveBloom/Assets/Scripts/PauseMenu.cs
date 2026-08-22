@@ -39,7 +39,7 @@ public class PauseMenu : MonoBehaviour
 
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            // Ako smo u settings-u, ESC vraća na pause meni
+            //ako smo u settings ESC vraca na pause meni
             if (settingsPanel.activeSelf)
             {
                 CloseSettings();

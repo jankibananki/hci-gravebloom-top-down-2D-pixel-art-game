@@ -37,7 +37,6 @@ public class PlayerAttack : MonoBehaviour
     {
         Vector2 direction = aim.AimDirection;
 
-        // Biramo najbližu od 4 postojeće cast animacije
         Vector2 cardinalDirection = aim.GetCardinalDirection();
 
         animator.SetFloat("AimX", cardinalDirection.x);

@@ -40,13 +40,13 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        // Radi i ako Animator kasnije prebaciš na Visual child
+        // radi i ako Animator kasnije prebacim na Visual child
         animator = GetComponentInChildren<Animator>();
 
-        // Ako je mage, naći će EnemyAI
+        // ako je mage nalazi EnemyAI
         rangedAI = GetComponent<EnemyAI>();
 
-        // Ako je knight, naći će MeleeEnemyAI
+        // ako je obican skeleton nalazi MeleeEnemyAI
         meleeAI = GetComponent<MeleeEnemyAI>();
         //ako je boss nalazi BossAI
         bossAI = GetComponent<BossAI>();
@@ -55,7 +55,7 @@ public class EnemyHealth : MonoBehaviour
 
         enemySFX = GetComponent<EnemySFX>();
 
-        // Uzmi sve collidere, uključujući eventualne child hitboxove
+        //uzima sve collidere i eventualne child hitboxove
         colliders = GetComponentsInChildren<Collider2D>();
 
         Debug.Log(
@@ -139,7 +139,7 @@ public class EnemyHealth : MonoBehaviour
         }
 
         // Ugasi sve collidere
-        // da mrtav enemy više ne blokira / prima hitove
+        // da mrtav enemy vise ne blokira / prima hitove
         foreach (Collider2D col in colliders)
         {
             if (col != null)

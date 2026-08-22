@@ -13,7 +13,7 @@ public class SceneTransition : MonoBehaviour
 
     void Start()
     {
-        // Svaki level počinje iz crnog
+        // svaki level pocinje iz crnog
         fadeOverlay.alpha = 1f;
         fadeOverlay.blocksRaycasts = true;
 
